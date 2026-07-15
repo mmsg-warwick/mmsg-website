@@ -26,4 +26,3 @@ linkedin: "example-student"
 ## Biography
 
 Example biography.
-

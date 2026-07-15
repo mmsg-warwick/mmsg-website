@@ -18,4 +18,3 @@
 3. Students
 4. Affiliates
 5. Former members
-
