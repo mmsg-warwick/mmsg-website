@@ -37,6 +37,8 @@ jobs:
             --no-progress
             --include-mail=false
             --root-dir ./public
+            --max-retries 3
+            --retry-wait-time 10
             --exclude "^https://doi.org/"
             --exclude "^https://orcid.org/"
             --exclude "^https://scholar.google.com/"
