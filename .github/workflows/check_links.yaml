@@ -41,7 +41,7 @@ jobs:
             --exclude "^https://orcid.org/"
             --exclude "^https://scholar.google.com/"
             --exclude "^https://www.linkedin.com/"
-            --exclude "^https://sciencedirectassets.com/"
+            --exclude "^https://.*sciencedirectassets\.com/"
             --exclude "^https://watermark.*\.silverchair\.com/"
             --exclude "^https://www.brosaplanella.xyz/"
             ./public
