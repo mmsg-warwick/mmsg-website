@@ -3,7 +3,8 @@
   publish = "public"
 
 [build.environment]
-  HUGO_VERSION = "0.147.0"  # replace with your version
+  HUGO_VERSION = "0.163.0"
+  HUGO_EXTENDED = "true"
 
 [context.deploy-preview]
   command = "hugo --minify --buildFuture"
