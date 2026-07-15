@@ -1,0 +1,55 @@
+baseURL = 'https://www.brosaplanella.xyz/'
+title = 'Mathematical Modelling for Sustainability Group'
+defaultContentLanguage = "en"
+
+[module]
+  [[module.imports]]
+    path = "github.com/nunocoracao/blowfish/v2"
+
+[params]
+  colorScheme = "fire"
+  disableImageZoom = true
+  enableA11y = true
+  enableSearch = true
+  [params.header]
+    layout = "fixed"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[[menus.main]]
+name = "Research"
+pageRef = "/research"
+weight = 10
+
+[[menus.main]]
+name = "People"
+pageRef = "/people"
+weight = 20
+
+[[menus.main]]
+name = "Publications"
+pageRef = "/publications"
+weight = 30
+
+[[menus.main]]
+name = "Software"
+pageRef = "/software"
+weight = 40
+
+# [[menus.main]]
+# name = "News"
+# pageRef = "/news"
+# weight = 50
+
+# [[menus.main]]
+# name = "Opportunities"
+# pageRef = "/opportunities"
+# weight = 60
+
+[[menus.main]]
+  name = ""
+  pre = "github"
+  url = "https://github.com/mmsg-warwick"
+  weight = 70
+  identifier = "github"

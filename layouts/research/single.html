@@ -1,0 +1,69 @@
+{{ define "main" }}
+
+<style>
+  .theme-hero {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+  .theme-hero-text {
+    flex: 1;
+    min-width: 0;
+  }
+  .theme-hero-image {
+    flex: 0 0 45%;
+    max-width: 45%;
+  }
+  .theme-hero-image img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 0.75rem;
+    display: block;
+  }
+  @media (max-width: 768px) {
+    .theme-hero {
+      flex-direction: column;
+    }
+    .theme-hero-image {
+      flex: none;
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+</style>
+
+<div class="px-4">
+
+  <!-- Hero: title + summary on left, image on right -->
+  <div class="theme-hero">
+
+    <div class="theme-hero-text">
+      <h1 style="font-size: 2rem; font-weight: 700; margin-bottom: 1rem; line-height: 1.2;">
+        {{ .Title }}
+      </h1>
+      {{ with .Summary }}
+        <p style="font-size: 1.05rem; opacity: 0.7; line-height: 1.7;">
+          {{ . }}
+        </p>
+      {{ end }}
+    </div>
+
+    {{ with .Resources.GetMatch .Params.photo }}
+      <div class="theme-hero-image">
+        <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" class="nozoom">
+      </div>
+    {{ end }}
+
+  </div>
+
+  <!-- Main content -->
+  <div class="prose dark:prose-invert max-w-none">
+    {{ .Content }}
+  </div>
+
+</div>
+
+{{ end }}
