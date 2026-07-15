@@ -1,0 +1,45 @@
+name: Check Links
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: "0 8 * * 1"  # every Monday at 8am UTC
+
+jobs:
+  link-checker:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: "0.163.3"  # replace with your version
+          extended: true
+
+      - name: Build site
+        run: hugo --minify
+
+      - name: Check links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >
+            --verbose
+            --no-progress
+            --exclude-mail
+            --exclude "^https://doi.org/"
+            --exclude "^https://orcid.org/"
+            --exclude "^https://scholar.google.com/"
+            --exclude "^https://www.linkedin.com/"
+            ./public
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
