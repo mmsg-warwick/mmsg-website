@@ -1,0 +1,183 @@
+{{ define "main" }}
+
+<style>
+  body {
+    background: linear-gradient(180deg, rgba(var(--color-primary-500), 0.25) 0%, transparent 40%);
+    background-attachment: fixed;
+  }
+  .hero-wrapper {
+    position: relative;
+    padding: 4rem 1.5rem 3rem 1.5rem;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    margin-bottom: 2.5rem;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  .hero-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.15;
+    margin: 0;
+  }
+  .hero-description {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    opacity: 0.75;
+    margin: 0;
+  }
+  .hero-accent {
+    width: 3.5rem;
+    height: 4px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, rgba(var(--color-primary-500), 0.8), rgba(var(--color-secondary-500), 0.6));
+  }
+  .highlights-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+  @media (min-width: 640px) {
+    .highlights-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (min-width: 1280px) {
+    .highlights-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  .highlight-card {
+    display: block;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    border: 1px solid rgba(128,128,128,0.2);
+    text-decoration: none;
+    transition: box-shadow 0.2s ease, border-color 0.2s ease;
+  }
+  .highlight-card:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    border-color: rgba(128,128,128,0.4);
+  }
+  .highlight-icon {
+    width: 2.25rem;
+    height: 2.25rem;
+    margin-bottom: 1rem;
+    opacity: 0.8;
+  }
+  .highlight-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+  }
+  .highlight-desc {
+    font-size: 0.875rem;
+    opacity: 0.65;
+    line-height: 1.6;
+    margin: 0;
+  }
+  .section-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    opacity: 0.45;
+    margin-bottom: 1.25rem;
+  }
+  .divider {
+    border: none;
+    border-top: 1px solid rgba(128,128,128,0.15);
+    margin-bottom: 2.5rem;
+  }
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 1.85rem;
+    }
+    .hero-description {
+      font-size: 1rem;
+    }
+  }
+</style>
+
+<div class="hero-wrapper">
+
+  {{/* Hero */}}
+  <div class="hero">
+
+    <div>
+      <p class="section-label">Welcome</p>
+      <h1 class="hero-title">{{ .Title }}</h1>
+    </div>
+
+    <div class="hero-accent"></div>
+
+    {{ with .Params.description }}
+      <p class="hero-description">{{ . }}</p>
+    {{ end }}
+
+  </div>
+
+  {{/* Divider */}}
+  <hr class="divider" style="max-width: 920px; margin-left: auto; margin-right: auto; margin-top: 2.5rem;">
+
+  {{/* Highlight cards */}}
+  <div style="max-width: 920px; margin: 0 auto;">
+
+    <p class="section-label">Explore</p>
+
+    <div class="highlights-grid">
+
+      <a href="/research/" class="highlight-card">
+        <div class="highlight-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.745 3A23.933 23.933 0 0 0 3 12c0 3.183.62 6.22 1.745 9M19.255 3A23.933 23.933 0 0 1 21 12c0 3.183-.62 6.22-1.745 9M8.25 8.885l1.444-.89a.75.75 0 0 1 1.105.402l2.402 7.206a.75.75 0 0 0 1.104.401l1.445-.889m-8.25.75.213.09a1.687 1.687 0 0 0 2.062-.617l4.45-6.676a1.688 1.688 0 0 1 2.062-.618l.213.09" />
+          </svg>
+        </div>
+        <div class="highlight-title">Research</div>
+        <p class="highlight-desc">Explore our research themes in electrochemical and thermal energy storage.</p>
+      </a>
+
+      <a href="/people/" class="highlight-card">
+        <div class="highlight-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" />
+          </svg>
+        </div>
+        <div class="highlight-title">People</div>
+        <p class="highlight-desc">Meet the group members, from PhD students to faculty.</p>
+      </a>
+
+      <a href="/publications/" class="highlight-card">
+        <div class="highlight-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
+          </svg>
+        </div>
+        <div class="highlight-title">Publications</div>
+        <p class="highlight-desc">Browse our peer-reviewed journal articles and conference papers.</p>
+      </a>
+
+      <a href="/software/" class="highlight-card">
+        <div class="highlight-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
+          </svg>
+        </div>
+        <div class="highlight-title">Software</div>
+        <p class="highlight-desc">Open-source scientific software tools we develop and contribute to.</p>
+      </a>
+
+    </div>
+
+  </div>
+
+</div>
+
+{{ end }}

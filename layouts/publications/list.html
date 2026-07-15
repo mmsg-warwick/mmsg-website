@@ -1,0 +1,207 @@
+{{ define "main" }}
+
+<style>
+  .publications-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+  .publications-content {
+    flex: 1;
+    min-width: 0;
+    order: 1;
+  }
+  .publications-toc {
+    flex: 0 0 140px;
+    position: sticky;
+    top: 5rem;
+    max-height: calc(100vh - 6rem);
+    overflow-y: auto;
+    order: 2;
+  }
+  @media (max-width: 768px) {
+    .publications-wrapper {
+      flex-direction: column;
+    }
+    .publications-toc {
+      position: static;
+      flex: none;
+      width: 100%;
+      order: 1;
+      border-bottom: 1px solid rgba(128,128,128,0.2);
+      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+    }
+    .publications-content {
+      order: 2;
+    }
+  }
+</style>
+
+<div class="px-4" style="max-width: 920px;">
+
+  <h1 class="text-4xl font-bold" style="margin-bottom: 1.5rem;">
+    {{ .Title }}
+  </h1>
+
+  <div class="prose dark:prose-invert max-w-none mb-8">
+    {{ .Content }}
+  </div>
+
+  {{ $publications := hugo.Data.publications }}
+
+  {{/* Extract year from nested CSL-JSON date-parts and build sortable list */}}
+  {{ $withYears := slice }}
+  {{ range $publications }}
+    {{ $year := 0 }}
+    {{ with .issued }}
+      {{ with index . "date-parts" }}
+        {{ with index . 0 }}
+          {{ $year = index . 0 }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+    {{ $withYears = $withYears | append (dict "pub" . "year" $year) }}
+  {{ end }}
+
+  {{/* Sort by year descending */}}
+  {{ $sorted := sort $withYears "year" "desc" }}
+
+  {{/* Collect unique years */}}
+  {{ $years := slice }}
+  {{ range $sorted }}
+    {{ if not (in $years .year) }}
+      {{ $years = $years | append .year }}
+    {{ end }}
+  {{ end }}
+
+  <div class="publications-wrapper">
+
+    {{/* Publications list */}}
+    <div class="publications-content">
+
+      {{ range $years }}
+        {{ $year := . }}
+
+        <h2 id="year-{{ $year }}" style="font-size: 1.5rem; font-weight: 700; margin-top: 2.5rem; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid rgba(128,128,128,0.2);">
+          {{ $year }}
+        </h2>
+
+        <div style="display: flex; flex-direction: column; gap: 1.25rem;">
+
+          {{ range $sorted }}
+            {{ if eq .year $year }}
+              {{ $pub := .pub }}
+
+              {{/* Parse note field for PDF and Software URLs */}}
+              {{ $pdf := "" }}
+              {{ $software := "" }}
+              {{ with $pub.note }}
+                {{ range split . "\n" }}
+                  {{ $line := trim . " \r" }}
+                  {{ if hasPrefix $line "PDF: " }}
+                    {{ $pdf = strings.TrimPrefix "PDF: " $line }}
+                  {{ end }}
+                  {{ if hasPrefix $line "Software: " }}
+                    {{ $software = strings.TrimPrefix "Software: " $line }}
+                  {{ end }}
+                {{ end }}
+              {{ end }}
+
+              <div style="padding: 1rem; border-radius: 0.5rem; border: 1px solid rgba(128,128,128,0.15);">
+
+                {{/* Title linked to DOI */}}
+                <div style="font-weight: 600; margin-bottom: 0.4rem; line-height: 1.4;">
+                  {{ with $pub.DOI }}
+                    <a href="https://doi.org/{{ . }}" target="_blank" rel="noopener"
+                      style="text-decoration: none;"
+                      onmouseover="this.style.textDecoration='underline'"
+                      onmouseout="this.style.textDecoration='none'">
+                      {{ $pub.title }}
+                    </a>
+                  {{ else }}
+                    {{ $pub.title }}
+                  {{ end }}
+                </div>
+
+                {{/* Authors */}}
+                {{ with $pub.author }}
+                  <div style="font-size: 0.9rem; opacity: 0.75; margin-bottom: 0.3rem;">
+                    {{ range $i, $author := . -}}
+                      {{- if $i }}, {{ end -}}
+                      {{- with $author.literal -}}
+                        {{ . }}
+                      {{- else -}}
+                        {{ $author.given }} {{ $author.family }}
+                      {{- end -}}
+                    {{- end }}
+                  </div>
+                {{ end }}
+
+                {{/* Journal, volume, pages, year */}}
+                <div style="font-size: 0.875rem; opacity: 0.6; font-style: italic; margin-bottom: 0.6rem;">
+                  {{ with index $pub "container-title" }}{{ . }}{{ end -}}
+                  {{ with $pub.volume }}, {{ . }}{{ end -}}
+                  {{ with $pub.page }}, pp. {{ . }}{{ end }}
+                  ({{ $year }})
+                </div>
+
+                {{/* PDF and Software buttons */}}
+                {{ if or $pdf $software }}
+                  <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.5rem;">
+
+                    {{ if $pdf }}
+                      <a href="{{ $pdf }}" target="_blank" rel="noopener"
+                        style="display: inline-flex; align-items: center; gap: 0.3rem; font-size: 0.78rem; font-weight: 600; padding: 0.25rem 0.65rem; border-radius: 999px; border: 1px solid rgba(128,128,128,0.3); text-decoration: none; opacity: 0.75; transition: opacity 0.15s;"
+                        onmouseover="this.style.opacity='1'"
+                        onmouseout="this.style.opacity='0.75'">
+                        <span style="width: 14px; height: 14px; display: inline-flex; align-items: center;">{{ partial "icon.html" "file-lines" }}</span>
+                        PDF
+                      </a>
+                    {{ end }}
+
+                    {{ if $software }}
+                      <a href="{{ $software }}" target="_blank" rel="noopener"
+                        style="display: inline-flex; align-items: center; gap: 0.3rem; font-size: 0.78rem; font-weight: 600; padding: 0.25rem 0.65rem; border-radius: 999px; border: 1px solid rgba(128,128,128,0.3); text-decoration: none; opacity: 0.75; transition: opacity 0.15s;"
+                        onmouseover="this.style.opacity='1'"
+                        onmouseout="this.style.opacity='0.75'">
+                        <span style="width: 14px; height: 14px; display: inline-flex; align-items: center;">{{ partial "icon.html" "code" }}</span>
+                        Software
+                      </a>
+                    {{ end }}
+
+                  </div>
+                {{ end }}
+
+              </div>
+
+            {{ end }}
+          {{ end }}
+
+        </div>
+
+      {{ end }}
+
+    </div>
+
+    {{/* TOC sidebar */}}
+    <div class="publications-toc">
+      <p style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; opacity: 0.5; margin-bottom: 0.75rem;">
+        Jump to
+      </p>
+      {{ range $years }}
+        <a href="#year-{{ . }}"
+          style="display: block; font-size: 0.9rem; padding: 0.2rem 0; opacity: 0.6; text-decoration: none;"
+          onmouseover="this.style.opacity='1'"
+          onmouseout="this.style.opacity='0.6'">
+          {{ . }}
+        </a>
+      {{ end }}
+    </div>
+
+  </div>
+
+</div>
+
+{{ end }}

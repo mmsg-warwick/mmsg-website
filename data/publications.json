@@ -1,0 +1,1433 @@
+[
+	{
+		"id": "BrosaPlanella2021",
+		"type": "article-journal",
+		"abstract": "The widely used Doyle-Fuller-Newman (DFN) model for lithium-ion batteries is too computationally expensive for certain applications, which has motivated the appearance of a plethora of simpler models. These models are usually posed in an ad hoc manner, leading to inconsistencies with the DFN model and to multiple formulations of the same model, with the Single Particle Model (SPM) being a very good example of the latter. In this work, we discuss the concept of SPM-type models showing that, despite the multiple formulations found in the literature, these models always follow the same structure, and we extend this discussion to models accounting for thermal effects. Then, we present a Thermal Single Particle Model with electrolyte (TSPMe) derived in a systematic manner using asymptotic techniques. The validation of the TSPMe against a thermal DFN model shows very high accuracy with a computational cost over forty times smaller. The comparison against experimental data shows that the model does a reasonable job predicting the behaviour of a real battery, but a very good parameter set is required to obtain accurate predictions.",
+		"citation-key": "BrosaPlanella2021",
+		"container-title": "Electrochimica Acta",
+		"DOI": "10.1016/j.electacta.2021.138524",
+		"ISSN": "00134686",
+		"license": "All rights reserved",
+		"note": "arXiv: 2011.01611",
+		"page": "138524",
+		"title": "Systematic derivation and validation of a reduced thermal-electrochemical model for lithium-ion batteries using asymptotic methods",
+		"URL": "http://arxiv.org/abs/2011.01611",
+		"volume": "388",
+		"author": [
+			{
+				"family": "Brosa Planella",
+				"given": "Ferran"
+			},
+			{
+				"family": "Sheikh",
+				"given": "Muhammad"
+			},
+			{
+				"family": "Widanage",
+				"given": "W. Dhammika"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2020",
+					11,
+					5
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021",
+					8,
+					3
+				]
+			]
+		}
+	},
+	{
+		"id": "Tranter2022",
+		"type": "article-journal",
+		"abstract": "Electrification of transport and other energy intensive activities is of growing importance as it provides an underpinning method to reduce carbon emissions. With an increase in reliance on renewable sources of energy and a reduction in the use of more predictable fossil fuels in both stationary and mobile applications, energy storage will play a pivotal role and batteries are currently the most widely adopted and versatile form. Therefore, understanding how batteries work, how they degrade, and how to optimize and manage their operation at large scales is critical to achieving emission reduction targets. The electric vehicle (EV) industry requires a considerable number of batteries even for a single vehicle, sometimes numbering in the thousands if smaller cells are used, and the dynamics and degradation of these systems, as well as large stationary power systems, is not that well understood. As increases in the efficiency of a single battery become diminishing for standard commercially available chemistries, gains made at the system level become more important and can potentially be realised more quickly compared with developing new chemistries. Mathematical models and simulations provide a way to address these challenging questions and can aid the engineer and designers of batteries and battery management systems to provide longer lasting and more efficient energy storage systems.",
+		"citation-key": "Tranter2022",
+		"container-title": "Journal of Open Source Software",
+		"DOI": "10.21105/joss.04051",
+		"ISSN": "2475-9066",
+		"issue": "40",
+		"license": "All rights reserved",
+		"page": "4051",
+		"title": "liionpack : A Python package for simulating packs of batteries with PyBaMM",
+		"URL": "https://joss.theoj.org/papers/10.21105/joss.04051",
+		"volume": "7",
+		"author": [
+			{
+				"family": "Tranter",
+				"given": "Thomas G."
+			},
+			{
+				"family": "Timms",
+				"given": "Robert"
+			},
+			{
+				"family": "Sulzer",
+				"given": "Valentin"
+			},
+			{
+				"family": "Brosa Planella",
+				"given": "Ferran"
+			},
+			{
+				"family": "Wiggins",
+				"given": "Gavin M."
+			},
+			{
+				"family": "Karra",
+				"given": "Suryanarayana V."
+			},
+			{
+				"family": "Agarwal",
+				"given": "Priyanshu"
+			},
+			{
+				"family": "Chopra",
+				"given": "Saransh"
+			},
+			{
+				"family": "Allu",
+				"given": "Srikanth"
+			},
+			{
+				"family": "Shearing",
+				"given": "Paul R."
+			},
+			{
+				"family": "Brett",
+				"given": "Dan J. L."
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					2,
+					22
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2022",
+					2,
+					21
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/users/5421108/items/B3RBCRI5",
+		"type": "article-journal",
+		"abstract": "We study the extended Stefan problem which includes constitutional supercooling for the solidification of a binary alloy in a finite spherical domain. We perform an asymptotic analysis in the limits of large Lewis number and small Stefan number which allows us to identify a number of spatio-temporal regimes signifying distinct behaviours in the solidification process, resulting in an intricate boundary layer structure. Our results generalise those present in the literature by considering all time regimes for the Stefan problem while also accounting for impurities and constitutional supercooling. These results also generalise recent work on the extended Stefan problem for finite planar domains to spherical domains, and we shall highlight key differences in the asymptotic solutions and the underlying boundary layer structure which result from this change in geometry. We compare our asymptotic solutions with both numerical simulations and real experimental data arising from the casting of molten metallurgical grade silicon through the water granulation process, with our analysis highlighting the role played by supercooling in the solidification of binary alloys appearing in such applications.",
+		"container-title": "European Journal of Applied Mathematics",
+		"DOI": "10.1017/S095679252000011X",
+		"ISSN": "0956-7925",
+		"issue": "2",
+		"license": "All rights reserved",
+		"page": "242-279",
+		"title": "Extended Stefan problem for the solidification of binary alloys in a sphere",
+		"URL": "https://www.cambridge.org/core/product/identifier/S095679252000011X/type/journal_article",
+		"volume": "32",
+		"author": [
+			{
+				"family": "Brosa Planella",
+				"given": "Ferran"
+			},
+			{
+				"family": "Please",
+				"given": "Colin P."
+			},
+			{
+				"family": "Van Gorder",
+				"given": "Robert A."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2021",
+					4,
+					4
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/users/5421108/items/XMEFH9FH",
+		"type": "article-journal",
+		"abstract": "© The Author(s) 2017. Published by Oxford University Press on behalf of the Institute of Mathematics and its Applications. All rights reserved. Understanding the solidification process of a binary alloy is important if one is to control the microstructure obtained during the casting of metals. Whilst much work has been done on the steady-state solidification problem, despite their relevance to metallurgical applications, there is less known about non-steady solidification problems and their stability. In the paper we shall consider the non-steady solidification problem in which the planar solidification front moves in a self-similar manner, in both infinite and semi-infinite planar 1D geometries. For each geometry exact solutions are known for the resulting Stefan problem. We direct our attention to the stability of each solution, demonstrating that whilst the concentration and thermal solutions remain stable, the interface corresponding to the solidification front can develop instabilities. For each geometry, we find that there are always unstable perturbations, although we observe qualitative differences in the form of the unstable perturbations for each case. These results generalize and extend several existing studies in the literature, and throw light on the instability inherent in the non-steady solidification process.",
+		"container-title": "IMA Journal of Applied Mathematics (Institute of Mathematics and Its Applications)",
+		"DOI": "10.1093/imamat/hxx037",
+		"ISSN": "14643634",
+		"issue": "1",
+		"license": "All rights reserved",
+		"page": "106-130",
+		"title": "Instability in the self-similar motion of a planar solidification front",
+		"volume": "83",
+		"author": [
+			{
+				"family": "Brosa Planella",
+				"given": "Ferran"
+			},
+			{
+				"family": "Please",
+				"given": "Colin P."
+			},
+			{
+				"family": "Van Gorder",
+				"given": "Robert A."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2018"
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/users/5421108/items/X5CQBI5I",
+		"type": "article-journal",
+		"abstract": "The discovery of Pluto's small moons in the last decade brought attention to the dynamics of the dwarf planet's satellites. With such systems in mind, we study a planar $N$-body system in which all the bodies are point masses, except for a single rigid body. We then present a reduced model consisting of a planar $N$-body problem with the rigid body treated as a 1D continuum (i.e. the body is treated as a rod with an arbitrary mass distribution). Such a model provides a good approximation to highly asymmetric geometries, such as the recently observed interstellar asteroid 'Oumuamua, but is also amenable to analysis. We analytically demonstrate the existence of homoclinic chaos in the case where one of the orbits is nearly circular by way of the Melnikov method, and give numerical evidence for chaos when the orbits are more complicated. We show that the extent of chaos in parameter space is strongly tied to the deviations from a purely circular orbit. These results suggest that chaos is ubiquitous in many-body problems when one or more of the rigid bodies exhibits non-spherical and highly asymmetric geometries. The excitation of chaotic rotations does not appear to require tidal dissipation, obliquity variation, or orbital resonance. Such dynamics give a possible explanation for routes to chaotic dynamics observed in $N$-body systems such as the Pluto system where some of the bodies are highly non-spherical.",
+		"container-title": "International Journal of Bifurcation and Chaos",
+		"DOI": "10.1142/S0218127418300136",
+		"ISSN": "0218-1274",
+		"issue": "05",
+		"license": "All rights reserved",
+		"page": "1830013",
+		"title": "Chaotic Dynamics in the Planar Gravitational Many-Body Problem with Rigid Body Rotations",
+		"URL": "https://www.worldscientific.com/doi/abs/10.1142/S0218127418300136",
+		"volume": "28",
+		"author": [
+			{
+				"family": "Kwiecinski",
+				"given": "James A."
+			},
+			{
+				"family": "Kovacs",
+				"given": "Attila"
+			},
+			{
+				"family": "Krause",
+				"given": "Andrew L."
+			},
+			{
+				"family": "Brosa Planella",
+				"given": "Ferran"
+			},
+			{
+				"family": "Van Gorder",
+				"given": "Robert A."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2018",
+					5
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/users/5421108/items/W4FTBS58",
+		"type": "article-journal",
+		"abstract": "We formulate and study dynamics from a complex Ginzburg–Landau system with saturable nonlinearity, including asymmetric cross-phase modulation (XPM) parameters. Such equations can model phenomena described by complex Ginzburg–Landau systems under the added assumption of saturable media. When the saturation parameter is set to zero, we recover a general complex cubic Ginzburg–Landau system with XPM. We first derive conditions for the existence of bounded dynamics, approximating the absorbing set for solutions. We use this to then determine conditions for amplitude death of a single wavefunction. We also construct exact plane wave solutions, and determine conditions for their modulational instability. In a degenerate limit where dispersion and nonlinearity balance, we reduce our system to a saturable nonlinear Schrödinger system with XPM parameters, and we demonstrate the existence and behavior of spatially heterogeneous stationary solutions in this limit. Using numerical simulations we verify the aforementioned analytical results, while also demonstrating other interesting emergent features of the dynamics, such as spatiotemporal chaos in the presence of modulational instability. In other regimes, coherent patterns including uniform states or banded structures arise, corresponding to certain stable stationary states. For sufficiently large yet equal XPM parameters, we observe a segregation of wavefunctions into different regions of the spatial domain, while when XPM parameters are large and take different values, one wavefunction may decay to zero in finite time over the spatial domain (in agreement with the amplitude death predicted analytically). We also find a collection of transient features, including transient defects and what appear to be rogue waves, while in two spatial dimensions we observe highly localized pattern formation. While saturation will often regularize the dynamics, such transient dynamics can still be observed – and in some cases even prolonged – as the saturability of the media is increased, as the saturation may act to slow the timescale.",
+		"container-title": "Annals of Physics",
+		"DOI": "10.1016/j.aop.2018.07.003",
+		"ISSN": "1096035X",
+		"license": "All rights reserved",
+		"page": "397-428",
+		"title": "Coupled complex Ginzburg–Landau systems with saturable nonlinearity and asymmetric cross-phase modulation",
+		"volume": "396",
+		"author": [
+			{
+				"family": "Van Gorder",
+				"given": "Robert A."
+			},
+			{
+				"family": "Krause",
+				"given": "Andrew L."
+			},
+			{
+				"family": "Brosa Planella",
+				"given": "Ferran"
+			},
+			{
+				"family": "Burton",
+				"given": "Abigail M."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2018"
+				]
+			]
+		}
+	},
+	{
+		"id": "Hunt2020",
+		"type": "article-journal",
+		"abstract": "Thermal electrochemical models for porous electrode batteries (such as lithium ion batteries) are widely used. Due to the multiple scales involved, solving the model accounting for the porous microstructure is computationally expensive, therefore effective models at the macroscale are preferable. However, these effective models are usually postulated ad hoc rather than systematically upscaled from the microscale equations. We present an effective thermal electrochemical model obtained using asymptotic homogenisation, which includes the electrochemical model at the cell level coupled with a thermal model that can be defined either at the cell or the battery level. The main aspects of the model are the consideration of thermal effects, the diffusion effects in the electrode particles, and the anisotropy of the material based on the microstructure, all of them incorporated in a systematic manner. We also compare the homogenised model with the standard electrochemical Doyle, Fuller & Newman model.",
+		"citation-key": "Hunt2020",
+		"container-title": "Journal of Engineering Mathematics",
+		"DOI": "10.1007/s10665-020-10045-8",
+		"ISSN": "0022-0833",
+		"issue": "1",
+		"license": "All rights reserved",
+		"note": "arXiv: 1911.00476\nISBN: 1066502010045",
+		"page": "31-57",
+		"publisher": "Springer Netherlands",
+		"title": "Derivation of an effective thermal electrochemical model for porous electrode batteries using asymptotic homogenisation",
+		"URL": "http://arxiv.org/abs/1911.00476",
+		"volume": "122",
+		"author": [
+			{
+				"family": "Hunt",
+				"given": "Matthew J."
+			},
+			{
+				"family": "Brosa Planella",
+				"given": "F."
+			},
+			{
+				"family": "Theil",
+				"given": "Florian"
+			},
+			{
+				"family": "Widanage",
+				"given": "W. Dhammika"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2020",
+					6,
+					11
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/users/5421108/items/X8C5EDU7",
+		"type": "article-journal",
+		"abstract": "Abstract\n            Physics-based electrochemical battery models derived from porous electrode theory are a very powerful tool for understanding lithium-ion batteries, as well as for improving their design and management. Different model fidelity, and thus model complexity, is needed for different applications. For example, in battery design we can afford longer computational times and the use of powerful computers, while for real-time battery control (e.g. in electric vehicles) we need to perform very fast calculations using simple devices. For this reason, simplified models that retain most of the features at a lower computational cost are widely used. Even though in the literature we often find these simplified models posed independently, leading to inconsistencies between models, they can actually be derived from more complicated models using a unified and systematic framework. In this review, we showcase this reductive framework, starting from a high-fidelity microscale model and reducing it all the way down to the single particle model, deriving in the process other common models, such as the Doyle–Fuller–Newman model. We also provide a critical discussion on the advantages and shortcomings of each of the models, which can aid model selection for a particular application. Finally, we provide an overview of possible extensions to the models, with a special focus on thermal models. Any of these extensions could be incorporated into the microscale model and the reductive framework re-applied to lead to a new generation of simplified, multi-physics models.",
+		"container-title": "Progress in Energy",
+		"DOI": "10.1088/2516-1083/ac7d31",
+		"ISSN": "2516-1083",
+		"issue": "4",
+		"journalAbbreviation": "Prog. Energy",
+		"license": "All rights reserved",
+		"page": "042003",
+		"source": "DOI.org (Crossref)",
+		"title": "A continuum of physics-based lithium-ion battery models reviewed",
+		"URL": "https://iopscience.iop.org/article/10.1088/2516-1083/ac7d31",
+		"volume": "4",
+		"author": [
+			{
+				"family": "Brosa Planella",
+				"given": "F"
+			},
+			{
+				"family": "Ai",
+				"given": "W"
+			},
+			{
+				"family": "Boyce",
+				"given": "A M"
+			},
+			{
+				"family": "Ghosh",
+				"given": "A"
+			},
+			{
+				"family": "Korotkin",
+				"given": "I"
+			},
+			{
+				"family": "Sahu",
+				"given": "S"
+			},
+			{
+				"family": "Sulzer",
+				"given": "V"
+			},
+			{
+				"family": "Timms",
+				"given": "R"
+			},
+			{
+				"family": "Tranter",
+				"given": "T G"
+			},
+			{
+				"family": "Zyskin",
+				"given": "M"
+			},
+			{
+				"family": "Cooper",
+				"given": "S J"
+			},
+			{
+				"family": "Edge",
+				"given": "J S"
+			},
+			{
+				"family": "Foster",
+				"given": "J M"
+			},
+			{
+				"family": "Marinescu",
+				"given": "M"
+			},
+			{
+				"family": "Wu",
+				"given": "B"
+			},
+			{
+				"family": "Richardson",
+				"given": "G"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					7,
+					25
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2022",
+					10,
+					1
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/users/5421108/items/N429EHZH",
+		"type": "article-journal",
+		"abstract": "Lithium-ion batteries can last many years but sometimes exhibit rapid, nonlinear degradation that severely limits battery lifetime. In this work, we review prior work on “knees” in lithium-ion battery aging trajectories. We first review definitions for knees and three classes of “internal state trajectories” (termed snowball, hidden, and threshold trajectories) that can cause a knee. We then discuss six knee “pathways”, including lithium plating, electrode saturation, resistance growth, electrolyte and additive depletion, percolation-limited connectivity, and mechanical deformation—some of which have internal state trajectories with signals that are electrochemically undetectable. We also identify key design and usage sensitivities for knees. Finally, we discuss challenges and opportunities for knee modeling and prediction. Our findings illustrate the complexity and subtlety of lithium-ion battery degradation and can aid both academic and industrial efforts to improve battery lifetime.",
+		"container-title": "Journal of The Electrochemical Society",
+		"DOI": "10.1149/1945-7111/ac6d13",
+		"ISSN": "1945-7111",
+		"issue": "6",
+		"journalAbbreviation": "J. Electrochem. Soc.",
+		"language": "en",
+		"license": "All rights reserved",
+		"page": "060517",
+		"publisher": "The Electrochemical Society",
+		"source": "Institute of Physics",
+		"title": "Review—“Knees” in Lithium-Ion Battery Aging Trajectories",
+		"URL": "https://doi.org/10.1149/1945-7111/ac6d13",
+		"volume": "169",
+		"author": [
+			{
+				"family": "Attia",
+				"given": "Peter M."
+			},
+			{
+				"family": "Bills",
+				"given": "Alexander"
+			},
+			{
+				"family": "Planella",
+				"given": "Ferran Brosa"
+			},
+			{
+				"family": "Dechent",
+				"given": "Philipp"
+			},
+			{
+				"family": "Reis",
+				"given": "Gonçalo",
+				"dropping-particle": "dos"
+			},
+			{
+				"family": "Dubarry",
+				"given": "Matthieu"
+			},
+			{
+				"family": "Gasper",
+				"given": "Paul"
+			},
+			{
+				"family": "Gilchrist",
+				"given": "Richard"
+			},
+			{
+				"family": "Greenbank",
+				"given": "Samuel"
+			},
+			{
+				"family": "Howey",
+				"given": "David"
+			},
+			{
+				"family": "Liu",
+				"given": "Ouyang"
+			},
+			{
+				"family": "Khoo",
+				"given": "Edwin"
+			},
+			{
+				"family": "Preger",
+				"given": "Yuliya"
+			},
+			{
+				"family": "Soni",
+				"given": "Abhishek"
+			},
+			{
+				"family": "Sripad",
+				"given": "Shashank"
+			},
+			{
+				"family": "Stefanopoulou",
+				"given": "Anna G."
+			},
+			{
+				"family": "Sulzer",
+				"given": "Valentin"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					7,
+					12
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2022",
+					6
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/users/5421108/items/UHELJSJ5",
+		"type": "article-journal",
+		"container-title": "Electrochimica Acta",
+		"DOI": "10.1016/j.electacta.2022.140700",
+		"ISSN": "00134686",
+		"journalAbbreviation": "Electrochimica Acta",
+		"language": "en",
+		"license": "All rights reserved",
+		"page": "140700",
+		"source": "DOI.org (Crossref)",
+		"title": "Thermal-electrochemical parameters of a high energy lithium-ion cylindrical battery",
+		"URL": "https://linkinghub.elsevier.com/retrieve/pii/S0013468622008593",
+		"volume": "425",
+		"author": [
+			{
+				"family": "O'Regan",
+				"given": "Kieran"
+			},
+			{
+				"family": "Brosa Planella",
+				"given": "Ferran"
+			},
+			{
+				"family": "Widanage",
+				"given": "W. Dhammika"
+			},
+			{
+				"family": "Kendrick",
+				"given": "Emma"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					7,
+					1
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2022",
+					9
+				]
+			]
+		}
+	},
+	{
+		"id": "Chen2020",
+		"type": "article-journal",
+		"abstract": "Presented here, is an extensive 35 parameter experimental data set of a cylindrical 21700 commercial cell (LGM50), for an electrochemical pseudo-two-dimensional (P2D) model. The experimental methodologies for tear-down and subsequent chemical, physical, electrochemical kinetics and thermodynamic analysis, and their accuracy and validity are discussed. Chemical analysis of the LGM50 cell shows that it is comprised of a NMC 811 positive electrode and bi-component Graphite-SiOx negative electrode. The thermodynamic open circuit voltages (OCV) and lithium stoichiometry in the electrode are obtained using galvanostatic intermittent titration technique (GITT) in half cell and three-electrode full cell configurations. The activation energy and exchange current coefficient through electrochemical impedance spectroscopy (EIS) measurements. Apparent diffusion coefficients are estimated using the Sand equation on the voltage transient during the current pulse; an expansion factor was applied to the bi- component negative electrode data to reflect the average change in effective surface area during lithiation. The 35 parameters are applied within a P2D model to show the fit to experimental validation LGM50 cell discharge and relaxation voltage profiles at room temperature. The accuracy and validity of the processes and the techniques in the determination of these parameters are discussed, including opportunities for further modelling and data analysis improvements.",
+		"citation-key": "Chen2020",
+		"container-title": "Journal of The Electrochemical Society",
+		"DOI": "10.1149/1945-7111/ab9050",
+		"ISSN": "1945-7111",
+		"issue": "8",
+		"license": "All rights reserved",
+		"page": "080534",
+		"title": "Development of Experimental Techniques for Parameterization of Multi-scale Lithium-ion Battery Models",
+		"URL": "https://iopscience.iop.org/article/10.1149/1945-7111/ab9050",
+		"volume": "167",
+		"author": [
+			{
+				"family": "Chen",
+				"given": "Chang-Hui"
+			},
+			{
+				"family": "Brosa Planella",
+				"given": "Ferran"
+			},
+			{
+				"family": "O’Regan",
+				"given": "Kieran"
+			},
+			{
+				"family": "Gastol",
+				"given": "Dominika"
+			},
+			{
+				"family": "Widanage",
+				"given": "W. Dhammika"
+			},
+			{
+				"family": "Kendrick",
+				"given": "Emma"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2020",
+					5,
+					15
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2020",
+					5,
+					15
+				]
+			]
+		}
+	},
+	{
+		"id": "Wang2022",
+		"type": "article-journal",
+		"abstract": "The Doyle–Fuller–Newman (DFN) framework is the most popular physics-based continuum-level description of the chemical and dynamical internal processes within operating lithium-ion-battery cells. With sufficient flexibility to model a wide range of battery designs and chemistries, the framework provides an effective balance between detail, needed to capture key microscopic mechanisms, and simplicity, needed to solve the governing equations at a relatively modest computational expense. Nevertheless, implementation requires values of numerous model parameters, whose ranges of applicability, estimation, and validation pose challenges. This article provides a critical review of the methods to measure or infer parameters for use within the isothermal DFN framework, discusses their advantages or disadvantages, and clarifies limitations attached to their practical application. Accompanying this discussion we provide a searchable database, available at www.liiondb.com , which aggregates many parameters and state functions for the standard DFN model that have been reported in the literature.",
+		"citation-key": "Wang2022",
+		"container-title": "Progress in Energy",
+		"DOI": "10.1088/2516-1083/ac692c",
+		"ISSN": "2516-1083",
+		"issue": "3",
+		"license": "All rights reserved",
+		"page": "032004",
+		"title": "Review of parameterisation and a novel database (LiionDB) for continuum Li-ion battery models",
+		"URL": "https://arxiv.org/abs/2110.09879v1",
+		"volume": "4",
+		"author": [
+			{
+				"family": "Wang",
+				"given": "A A"
+			},
+			{
+				"family": "O’Kane",
+				"given": "S E J"
+			},
+			{
+				"family": "Brosa Planella",
+				"given": "Ferran"
+			},
+			{
+				"family": "Houx",
+				"given": "J Le"
+			},
+			{
+				"family": "O’Regan",
+				"given": "K"
+			},
+			{
+				"family": "Zyskin",
+				"given": "Maxim"
+			},
+			{
+				"family": "Edge",
+				"given": "J"
+			},
+			{
+				"family": "Monroe",
+				"given": "C W"
+			},
+			{
+				"family": "Cooper",
+				"given": "S J"
+			},
+			{
+				"family": "Howey",
+				"given": "David A."
+			},
+			{
+				"family": "Kendrick",
+				"given": "Emma"
+			},
+			{
+				"family": "Foster",
+				"given": "Jamie Michael"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					10,
+					20
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2022",
+					7,
+					1
+				]
+			]
+		}
+	},
+	{
+		"id": "Mistry2021",
+		"type": "article-journal",
+		"citation-key": "Mistry2021",
+		"container-title": "ACS Energy Letters",
+		"DOI": "10.1021/acsenergylett.1c01710",
+		"ISSN": "2380-8195",
+		"issue": "11",
+		"license": "All rights reserved",
+		"page": "3831-3835",
+		"publisher": "American Chemical Society",
+		"title": "A Minimal Information Set To Enable Verifiable Theoretical Battery Research",
+		"URL": "https://pubs.acs.org/doi/full/10.1021/acsenergylett.1c01710",
+		"volume": "6",
+		"author": [
+			{
+				"family": "Mistry",
+				"given": "Aashutosh"
+			},
+			{
+				"family": "Verma",
+				"given": "Ankit"
+			},
+			{
+				"family": "Sripad",
+				"given": "Shashank"
+			},
+			{
+				"family": "Ciez",
+				"given": "Rebecca"
+			},
+			{
+				"family": "Sulzer",
+				"given": "Valentin"
+			},
+			{
+				"family": "Brosa Planella",
+				"given": "Ferran"
+			},
+			{
+				"family": "Timms",
+				"given": "Robert"
+			},
+			{
+				"family": "Zhang",
+				"given": "Yumin"
+			},
+			{
+				"family": "Kurchin",
+				"given": "Rachel"
+			},
+			{
+				"family": "Dechent",
+				"given": "Philipp"
+			},
+			{
+				"family": "Li",
+				"given": "Weihan"
+			},
+			{
+				"family": "Greenbank",
+				"given": "Samuel"
+			},
+			{
+				"family": "Ahmad",
+				"given": "Zeeshan"
+			},
+			{
+				"family": "Krishnamurthy",
+				"given": "Dilip"
+			},
+			{
+				"family": "Fenton",
+				"given": "Alexis M."
+			},
+			{
+				"family": "Tenny",
+				"given": "Kevin"
+			},
+			{
+				"family": "Patel",
+				"given": "Prehit"
+			},
+			{
+				"family": "Juarez Robles",
+				"given": "Daniel"
+			},
+			{
+				"family": "Gasper",
+				"given": "Paul"
+			},
+			{
+				"family": "Colclasure",
+				"given": "Andrew"
+			},
+			{
+				"family": "Baskin",
+				"given": "Artem"
+			},
+			{
+				"family": "Scown",
+				"given": "Corinne D."
+			},
+			{
+				"family": "Subramanian",
+				"given": "Venkat R."
+			},
+			{
+				"family": "Khoo",
+				"given": "Edwin"
+			},
+			{
+				"family": "Allu",
+				"given": "Srikanth"
+			},
+			{
+				"family": "Howey",
+				"given": "David"
+			},
+			{
+				"family": "DeCaluwe",
+				"given": "Steven"
+			},
+			{
+				"family": "Roberts",
+				"given": "Scott A."
+			},
+			{
+				"family": "Viswanathan",
+				"given": "Venkatasubramanian"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					10,
+					11
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021",
+					10,
+					11
+				]
+			]
+		}
+	},
+	{
+		"id": "Tait2020",
+		"type": "report",
+		"abstract": "It is often necessary in engineering to reduce a comprehensive mathematical model to a simplified representation which admits faster evaluation for control and opti-misation applications. However, this reduction can often lead to \"missing physics\" problem, whereby important dynamics of the true process have been sacrificed for tractability. In this work we consider the augmentation of these mathematically reduced models with adaptive data-driven components to recover this information. By introducing a stochastic differential equation framework with a set of common latent forcing function we allow information to be shared between different operating conditions, referred to as tasks, and to further generalise to new physical scenarios. Unfortunately, standard approaches to this problem scale cubicly in the number of tasks and so we introduce an approximation which achieves linear scaling allowing a large range of different physical scenarios to be investigated. Finally we demonstrate the potential of this method to improve prediction and generalisability in simplified models of Lithium-ion battery dynamics.",
+		"citation-key": "Tait2020",
+		"license": "All rights reserved",
+		"note": "container-title: NeurIPS 2020",
+		"title": "Scalable Multitask Latent Force Models with Applications to Predicting Lithium-ion Concentration",
+		"URL": "https://github.com/danieljtait/spmelf",
+		"author": [
+			{
+				"family": "Tait",
+				"given": "Daniel J"
+			},
+			{
+				"family": "Brosa Planella",
+				"given": "Ferran"
+			},
+			{
+				"family": "Damoulas",
+				"given": "Theodoros"
+			},
+			{
+				"family": "Dhammika Widanage",
+				"given": "W"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2020",
+					12,
+					28
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2020"
+				]
+			]
+		}
+	},
+	{
+		"id": "BrosaPlanella2019",
+		"type": "article-journal",
+		"abstract": "We consider the extended Stefan problem for the solidification of a binary alloy in a finite one-dimensional domain accounting for constitutional supercooling. In this problem, solidification fronts start from each boundary and move inward toward one another. We perform an asymptotic analysis of the problem in the limit of large Lewis number, which allows us to identify four important temporal regimes corresponding to distinct behaviors in the solidification process. We find that, for small time, the two solidification fronts are initially far from one another, and move in a self-similar manner toward the interior of the domain. However, when the fronts are sufficiently close, expelled impurities (which diffuse into, and build up within, the liquid phase between the two fronts) increase in concentration, inducing supercooling and thereby slowing the motion of the fronts. For large time, the system tends to its minimum temperature (corresponding to the boundary of the finite domain), with the concentration of impurities following in thermodynamic equilibrium. Asymptotic solutions in each spatiotemporal region are obtained and then matched to neighboring temporal regimes and spatial layers, and by matching we obtain global asymptotic solutions to the extended Stefan problem. We compare our asymptotic solutions to numerical simulations of the full problem obtained by a finite volume method, and the respective solutions show excellent agreement. We also compare our asymptotic solutions to real experimental data arising from the casting process for molten metallurgical grade silicon, with our analysis highlighting the role of supercooling in the solidification of binary alloys appearing in such applications.",
+		"citation-key": "BrosaPlanella2019",
+		"container-title": "SIAM Journal on Applied Mathematics",
+		"DOI": "10.1137/18M118699X",
+		"ISSN": "0036-1399",
+		"issue": "3",
+		"license": "All rights reserved",
+		"page": "876-913",
+		"publisher": "Society for Industrial and Applied Mathematics",
+		"title": "Extended Stefan Problem for Solidification of Binary Alloys in a Finite Planar Domain",
+		"URL": "https://epubs.siam.org/doi/10.1137/18M118699X",
+		"volume": "79",
+		"author": [
+			{
+				"family": "Brosa Planella",
+				"given": "Ferran"
+			},
+			{
+				"family": "Please",
+				"given": "Colin P."
+			},
+			{
+				"family": "Van Gorder",
+				"given": "Robert A."
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2019",
+					6,
+					7
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2019",
+					1,
+					4
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/users/5421108/items/HHSTVT32",
+		"type": "article-journal",
+		"container-title": "Applied Mathematical Modelling",
+		"DOI": "10.1016/j.apm.2022.12.009",
+		"ISSN": "0307904X",
+		"journalAbbreviation": "Applied Mathematical Modelling",
+		"language": "en",
+		"page": "586-610",
+		"source": "DOI.org (Crossref)",
+		"title": "A Single Particle model with electrolyte and side reactions for degradation of lithium-ion batteries",
+		"URL": "https://linkinghub.elsevier.com/retrieve/pii/S0307904X22005959",
+		"volume": "121",
+		"author": [
+			{
+				"family": "Brosa Planella",
+				"given": "Ferran"
+			},
+			{
+				"family": "Widanage",
+				"given": "W. Dhammika"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2023",
+					9,
+					22
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2023",
+					9
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/users/5421108/items/7Y9GQHQD",
+		"type": "article-journal",
+		"abstract": "Growth of the Solid Electrolyte Interphase (SEI) layer on negative electrode particles during the formation cycle is one of the most complex and least understood steps of lithium-ion battery manufacturing. This initial SEI formation significantly impacts battery performance, lifetime, and degradation. Zero-dimensional models, which reduce the complexity of SEI’s morphology, material, and structure, are commonly used to study long-term SEI growth rates and capacity fade. These models are derived based on limiting mechanisms. We aim to compare the most common SEI growth models, focusing on the first few cycles at low C-rates representing formation protocols. Using consistent parameters across models, we seek to understand if they can capture the dynamics of SEI formation. We conducted qualitative comparisons with experimental measurements of Coulombic efficiency in 2032-type coin cells at low C-rate. Our analysis shows that the models predict SEI growth in the first cycle to be higher than in subsequent cycles. However, the difference between cycles in these models is insufficient to explain the experimental results, which indicate a capacity fade during the first cycle that is two orders of magnitude higher than in later cycles. This suggests new models are needed to accurately describe the physics of the formation cycle. Comparison of zero-dimensional SEI models for Li-ion batteries in formation context. SEI growth trends in first and second cycles analyzed across all models. All models predict higher SEI growth in formation cycle, except Reaction Limited. SEI models inadequate to describe experimental capacity fade in formation cycle.",
+		"container-title": "Journal of The Electrochemical Society",
+		"DOI": "10.1149/1945-7111/ad8548",
+		"ISSN": "1945-7111",
+		"issue": "10",
+		"language": "en",
+		"license": "All rights reserved",
+		"page": "100530",
+		"publisher": "IOP Publishing",
+		"source": "Institute of Physics",
+		"title": "A Comparison of Standard SEI Growth Models in the Context of Battery Formation",
+		"URL": "https://dx.doi.org/10.1149/1945-7111/ad8548",
+		"volume": "171",
+		"author": [
+			{
+				"family": "Manmi",
+				"given": "Kawa"
+			},
+			{
+				"family": "Tuchel",
+				"given": "Marcus"
+			},
+			{
+				"family": "Kendrick",
+				"given": "Emma"
+			},
+			{
+				"family": "Brosa Planella",
+				"given": "Ferran"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2024",
+					10,
+					28
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2024",
+					10
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/users/5421108/items/PTPZJF4A",
+		"type": "article-journal",
+		"container-title": "Matter",
+		"DOI": "10.1016/j.matt.2024.08.014",
+		"ISSN": "2590-2393, 2590-2385",
+		"issue": "0",
+		"journalAbbreviation": "Matter",
+		"language": "English",
+		"license": "All rights reserved",
+		"publisher": "Elsevier",
+		"source": "www.cell.com",
+		"title": "Li-ion battery design through microstructural optimization using generative AI",
+		"URL": "https://www.cell.com/matter/abstract/S2590-2385(24)00446-6",
+		"volume": "0",
+		"author": [
+			{
+				"family": "Kench",
+				"given": "Steve"
+			},
+			{
+				"family": "Squires",
+				"given": "Isaac"
+			},
+			{
+				"family": "Dahari",
+				"given": "Amir"
+			},
+			{
+				"family": "Brosa Planella",
+				"given": "Ferran"
+			},
+			{
+				"family": "Roberts",
+				"given": "Scott A."
+			},
+			{
+				"family": "Cooper",
+				"given": "Samuel J."
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2024",
+					11,
+					24
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2024",
+					9,
+					23
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/users/5421108/items/4TKWIZK8",
+		"type": "article-journal",
+		"abstract": "The accuracy and reliability of physics-based lithium-ion battery degradation models are limited by incomplete understanding of degradation mechanisms. This article presents Universal Differential Equations (UDE) based degradation modelling, which integrates neural networks into physics-based model differential equations to learn partially understood degradation mechanisms. Therefore, this approach combines the function approximation capabilities of machine learning with the interpretability of physics-based models. However, the widespread adoption of this methodology is hindered by the high cost of training neural networks placed within a physics-based degradation model. To address this, we propose a cost-effective parameterisation method that exploits the large difference between electrochemical and degradation time scales, to speed up the gradient calculation using the continuous adjoint sensitivity analysis. Additionally, efficient scaling of this method to multiple ageing datasets is ensured through mini-batching. Finally, we demonstrate this approach by developing a novel UDE calendar ageing model and validating it against in-house experimental data covering 39 storage conditions (13 states of charge at 0 °C, 25 °C, and 45 °C). The predictions on full cell capacity and loss of active material (LAM) at negative electrode align well with experimental observations with an average RMSE of 0.66% and 1.11% respectively, which was a significant improvement over the baseline physics-based model.",
+		"container-title": "Applied Energy",
+		"DOI": "10.1016/j.apenergy.2024.125221",
+		"ISSN": "0306-2619",
+		"journalAbbreviation": "Applied Energy",
+		"license": "All rights reserved",
+		"page": "125221",
+		"source": "ScienceDirect",
+		"title": "Lithium-ion battery degradation modelling using universal differential equations: Development of a cost-effective parameterisation methodology",
+		"title-short": "Lithium-ion battery degradation modelling using universal differential equations",
+		"URL": "https://www.sciencedirect.com/science/article/pii/S0306261924026059",
+		"volume": "382",
+		"author": [
+			{
+				"family": "Kuzhiyil",
+				"given": "Jishnu Ayyangatu"
+			},
+			{
+				"family": "Damoulas",
+				"given": "Theodoros"
+			},
+			{
+				"family": "Brosa Planella",
+				"given": "Ferran"
+			},
+			{
+				"family": "Widanage",
+				"given": "W. Dhammika"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2025",
+					1,
+					7
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2025",
+					3,
+					15
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/users/5421108/items/TFHGC6IP",
+		"type": "article-journal",
+		"abstract": "This work conceptually proves and demonstrates in silico a new method and statistical analysis for the Galvanostatic Intermittent Titration Technique (GITT) that may decrease the experiment time by an order of magnitude. The method utilizes embedded Gaussian processes and focuses on the relaxation portion of the pulse-relaxation series. These innovations enable much higher current draws at each pulse, while shortening relaxation periods. The in silico proof-of-concept was achieved using simulated conditions similar to a published GITT experiment run on a lithium-lanthanum titanate half cell, while a validation of the relaxation-based method was performed on a porous LiζNi0.92Co0.03Mn0.05O2 cathode.",
+		"container-title": "Journal of The Electrochemical Society",
+		"DOI": "10.1149/1945-7111/ae26cd",
+		"ISSN": "1945-7111",
+		"issue": "12",
+		"journalAbbreviation": "J. Electrochem. Soc.",
+		"language": "en",
+		"page": "120527",
+		"publisher": "IOP Publishing",
+		"source": "Institute of Physics",
+		"title": "Initial Proof-of-Concept for an Accelerated Galvanostatic Intermittent Titration Technique via Embedded Machine Learning",
+		"URL": "https://doi.org/10.1149/1945-7111/ae26cd",
+		"volume": "172",
+		"author": [
+			{
+				"family": "Mebane",
+				"given": "David S."
+			},
+			{
+				"family": "Jackowska",
+				"given": "Roksana"
+			},
+			{
+				"family": "Fouts",
+				"given": "Michael W."
+			},
+			{
+				"family": "Planella",
+				"given": "Ferran Brosa"
+			},
+			{
+				"family": "Kendrick",
+				"given": "Emma"
+			},
+			{
+				"family": "Mehta",
+				"given": "Mohit R."
+			},
+			{
+				"family": "Lawson",
+				"given": "John W."
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2026",
+					4,
+					27
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2025",
+					12
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/users/5421108/items/LZCMR3DB",
+		"type": "article-journal",
+		"abstract": "Latent thermal energy storage (LTES) is a developing green-energy technology wherein heat is stored and released through melting and freezing a phase-change material (PCM) with high latent heat. However, the low thermal conductivity of PCMs limits the charging and discharging rates of LTES devices. A common solution involves using composite materials, where part of the PCM is replaced with a high-conductivity copper mesh. Designing such devices efficiently requires accurate mathematical models, but existing models fail to capture the multiscale nature of these composites and thus cannot reliably predict phase-change dynamics. We use homogenization analysis to derive two reduced models for heat conduction and phase change in composite PCMs, corresponding to two asymptotic limits: thin and thick copper wires. In the thin-wire limit, we obtain a sharp-front model with a phase-change interface at the macroscale. In the thick-wire limit, we derive a mush model, where phase change occurs simultaneously throughout the domain. The effective thermal conductivity can be computed for arbitrary microscale geometries, enabling mesh-microstructure optimization. Our results show that phase change is the fastest in the mush regime, making our model (structurally distinct to those in the literature) much more accurate for LTES modelling and design.",
+		"container-title": "Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences",
+		"DOI": "10.1098/rspa.2025.0660",
+		"ISSN": "1364-5021",
+		"issue": "2327",
+		"journalAbbreviation": "Proc. A",
+		"note": "PDF: https://watermark02.silverchair.com/rspa.2025.0660.pdf?token=AQECAHi208BE49Ooan9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAAA1EwggNNBgkqhkiG9w0BBwagggM-MIIDOgIBADCCAzMGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQM14brcaWhJ9YIx-0yAgEQgIIDBFfJGMRqEyuBpuDAlZuHBk0EldWa1eBHVkaf28fIrzuEEmyYyTPyu0zwcgetfYo5tgg7SPOReAMqoxDmx65wYc3kDU1yA7xACLJ1TbdRaP3tuhbBI154oidBSENIzY688mVDGowVEsNR8sROjrtUmm3OzhdhCk08uh6-Pq3TQusecX112kGeJcdATSGXpyQXmKQnziZu5-wRNQeJH3BCTK0SJTr7ms07nmRDvwHk-XEJa-S0yszozUHPqZEquvfIFoSPkrEUC5cYLuyzoahq7DKScuZ6FzcSXZYBjVsHzTsubMi9tOVPFiobtt-dvIsi9p1UKwUnwwVFO-SjP0TqAu6KVs7NL6anunnu-hsWhR2xCnL_BF2piySoPyGMXgVe2eTj9pJ3HkQ5hqU1qltGuDiXylxFMlwXXpoZONZIooGcq2qL_tTowSoI5WH9kZeOD-OyypawQFpONOl1z95BbIS7RQMNxicSpg2Dv6s4iMXzUO88q06wR-w7U0d_q4xbzOug3InRHeUaugYUZg8uFJv_LVE4T5cBnBc2BZ5GSxr04hxoKMwcgR480gR3zwfCQ0YJNXYwirlelkWfJRGQ1o31dmGvZ7tX4bPODXhX-_z52ub9wL1jp6sBKL00XbHF7ekDsWH4MNNhOfL-67JWlcNdFmNXgMLWuNjCGDc2mAh0oEFKvsLmdrkV9sEUcv-Be15CEZwoOXnyTlDc11t3T1Wh5skf5e8mv8kuVPuhbWAxoBgr5ZZnF6KurT3VbS8GLKea6Psf8xMNJyChEsZLGTamEU48r9RX11vEDpmFGMdVWL3MJR-2usKSz-zI1GRA5AR8mYDbahzUrAbev0Aiyant3QkZl0GN-yOfXctls5qpa2WvyzFrnIJi8v81X5tgN-elzUcZxwk0vogVerwUaSzgOlf158kE7o1PI5SAyMeQar6b9GTDBdlnJq9heiGdWmMF5yBfpqHbTTzJ8zfH5HPkHsKklyha8N5Us70-_LI2nS_BtLe_qf4o24DrZA0KF7sslH4\nSoftware: https://github.com/mmsg-warwick/composite-LTES",
+		"page": "20250660",
+		"source": "Silverchair",
+		"title": "Homogenized models for composite phase-change materials",
+		"URL": "https://doi.org/10.1098/rspa.2025.0660",
+		"volume": "481",
+		"author": [
+			{
+				"family": "Luckins",
+				"given": "E. K."
+			},
+			{
+				"family": "Brosa Planella",
+				"given": "F."
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2026",
+					4,
+					27
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2025",
+					12,
+					10
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/users/5421108/items/ISNHSQFE",
+		"type": "article-journal",
+		"abstract": "Planden et al., (2025). PyBOP: A Python package for battery model optimisation and parameterisation. Journal of Open Source Software, 10(116), 7874, https://doi.org/10.21105/joss.07874",
+		"container-title": "Journal of Open Source Software",
+		"DOI": "10.21105/joss.07874",
+		"ISSN": "2475-9066",
+		"issue": "116",
+		"language": "en",
+		"page": "7874",
+		"source": "joss.theoj.org",
+		"title": "PyBOP: A Python package for battery model optimisation and parameterisation",
+		"title-short": "PyBOP",
+		"URL": "https://joss.theoj.org/papers/10.21105/joss.07874",
+		"volume": "10",
+		"author": [
+			{
+				"family": "Planden",
+				"given": "Brady"
+			},
+			{
+				"family": "Courtier",
+				"given": "Nicola E."
+			},
+			{
+				"family": "Robinson",
+				"given": "Martin"
+			},
+			{
+				"family": "Khetarpal",
+				"given": "Agriya"
+			},
+			{
+				"family": "Planella",
+				"given": "Ferran Brosa"
+			},
+			{
+				"family": "Howey",
+				"given": "David A."
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2026",
+					4,
+					27
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2025",
+					12,
+					3
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/users/5421108/items/7WZN4WHG",
+		"type": "article-journal",
+		"abstract": "Efficient thermal energy storage systems are called to be a key part of any successful transition to a net zero future. Latent thermal energy storage provides high energy density but a low power rate, though solutions such as encapsulated phase-change materials address this issue by increasing the heat exchange surface area between the heat transfer fluid and the phase-change material. However, such devices still present challenges in their performance that hinder their widespread commercialisation, so the development of fast and accurate mathematical models is key to speed up the process. In this article we derive a simple physics-based model, the Averaged Capsule Model (ACM), that has similar accuracy to the state-of-the-art models but a significantly lower computational cost. We also clarify some misunderstandings about this kind of models common in the literature, and provide an open-source implementation of the models. Due to its low computational cost, this novel model opens the door to real-time control and design optimisation of thermal energy storage devices, which are key to accelerate the commercialisation of such technologies.",
+		"container-title": "International Journal of Heat and Mass Transfer",
+		"DOI": "10.1016/j.ijheatmasstransfer.2024.126533",
+		"ISSN": "0017-9310",
+		"journalAbbreviation": "International Journal of Heat and Mass Transfer",
+		"note": "PDF: https://pdf.sciencedirectassets.com/271451/1-s2.0-S0017931024X00198/1-s2.0-S0017931024013619/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDQaCXVzLWVhc3QtMSJHMEUCIDBV%2FaVDYNGVZA%2FjREREH2v2JvQaiL3uP2PPrG9XD2S5AiEA9jtYPTDzcq93uiIpA70HKDD9xWco5pXQFK04CqAo6%2F8qvAUI%2Ff%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAFGgwwNTkwMDM1NDY4NjUiDKfaJSF8wikkSkb3OiqQBaMH4h%2B1r6zaqbjKCSm0K2H24UrbBiXzGsB%2FOqEotJQ6DGeHPED2qgi9Kmf7ApmmhQGR1bOz2%2Bn5NutjRDRt2Nk0peIJjnon6NbIlNdTsMVXDGj0VK5sDfsFxJoDQpZpuNqmW42BechGSY8fAfDifet4JGQtIjGuJWdtYMvWzLWe4z4v%2BjOH36mJH3iPSxQiANTrfWdOmDeqisDUEJVkIwN%2B86XU%2BOhMeSNYXc5k4dgWgIxCchAQhSjBiS5QOazZYGPOWIDhWPkb1qbrz8L6afPyL6wov9PqOwItXST4fRv6CtWk7lJNUr3KWnqTBSdNuiH7ZpcXRsXkGZDsmjimYFLnJoLaSxY1ann2LCVfxCXZcA8MAcKKBM1NDyCxNcYvdCdmpGExLDGTYuUyxmIwNqKWtKLXxlfCul%2BZ5GSoDPb3OMe4KctKQo8viLzTD97tnr5S4ScUkFMh6jWB0Qi641bgNzMbB60SLvVxwqu7zqvpQPRCQ6wJHutwK5wtTCxSeATqDwWGR3zHfnwImoEfX2Jn8jjdyrUho%2B7%2FNYw3pXE%2FErC115TxAG4pbtDjoXJuSw3GDu5AJTKWwAv%2BHf3ERe8PTbqC7URO34u%2F6JYpi6T3S4691Bnwd210rWvKEcpXwlyCmiQ1f9zk1XRmVPJKSTdiIDjoUdR8iT1ArC4b%2Be7gicFwO9UQFIMFtNtl5q5rt%2FXPjKuytC1mY5lBeAQJIjKYmFAHv9pqKQeCGiznVwFWM5zZGRBPoGwQQhPL4VnEQqe5JQ86%2FpDYe%2FiHtNbTnOnKaU43%2FL5NhRPc4K2VdOM2hFeIGJ1yUsi4oNsPiEJR0g9Icv8ep4pgDjy%2B3QKjUq%2BLMsORhvU1NzSkx%2F39ziSuMPiV09IGOrEBvd1OsvcLl%2FOcWu1%2BjDgbJ0YHjNRJg0k4TJYUT8ai8Oy%2FTEttIkMQrwzgZCc9eg7k2M9Ob8GnRuEpWLEPbU6XKJmmibwcBspMzgaYBmcbm8F6p6jie7JG5WSJor%2FSTuAqvRTAYgdT%2B%2F9FPylwIX8t%2Fqxms5n%2FwT4G31qdwMrcsXKQRpOHC6JVwFYj7tS9zNJkp14v2tLtFpj1iYdrf2%2BZcj8Tgqt1rXncGhf3kPI7OPEv&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260713T122442Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTY4GUF227A%2F20260713%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=2d77635fd89d2fdeefc9910f25c81a30a295025616178565d3ed3f36fa4f3115&hash=bca984738e0fd731823b923c54556c84329614c994ed6fe413bccd1702cf0f3a&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S0017931024013619&tid=spdf-45569de7-450c-4780-b697-bee64d48771b&sid=0d61e7e31545e34d91195bd1407c5dfc48f3gxrqa&type=client&tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&rh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&ua=0f130652035d535a555c&rr=a1a84423d844baf7&cc=it\nSoftware: https://github.com/mmsg-warwick/encapsulated-LTES",
+		"page": "126533",
+		"source": "ScienceDirect",
+		"title": "A simple model for latent thermal energy storage systems with encapsulated phase-change material",
+		"URL": "https://www.sciencedirect.com/science/article/pii/S0017931024013619",
+		"volume": "239",
+		"author": [
+			{
+				"family": "Brosa Planella",
+				"given": "Ferran"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2026",
+					4,
+					27
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2025",
+					4,
+					1
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/users/5421108/items/UB7YPF2V",
+		"type": "article-journal",
+		"abstract": "Silicon carbide is a widely used material due to its unique combination of physical and chemical properties. However, existing Acheson furnaces, which cause direct $$\\hbox {CO}_2$$emissions, are expensive and energy inefficient. Rotary kilns are a promising alternative, but their use for silicon carbide production is still under development. In this article, we present a mathematical model for the consumption of quartz and carbon, and the formation of silicon carbide in a rotary kiln. We focus on the interplay between reaction kinetics, solid and gas transport, and thermal effects. Assuming radial mixing within the bed, we derive a simplified one-dimensional model that captures the dominant physics of the system. The model tracks the evolution of quartz, carbon, and silicon carbide, as well as gas-phase species and temperature, down the length of the kiln. We nondimensionalise the model and identify key parameter groupings—relating supplied heat to kiln fill level, initial carbon particle size, and the relative speed of the two chemical reactions we consider. Then, we examine the model’s behaviour via asymptotic analysis, before presenting numerical simulations. Our analysis shows that there is only one dimensionless parameter group that strongly influences reactor performance, with silicon carbide yield increasing monotonically with the value of this parameter. These findings offer broad-stroke insights into design principles and parameter operating regimes that favour efficient silicon carbide reactors.",
+		"container-title": "Journal of Engineering Mathematics",
+		"DOI": "10.1007/s10665-026-10524-4",
+		"ISSN": "1573-2703",
+		"issue": "1",
+		"journalAbbreviation": "J Eng Math",
+		"language": "en",
+		"page": "4",
+		"source": "Springer Link",
+		"title": "Reactor-scale modelling and analysis of heat and mass transfer in silicon carbide rotary kilns",
+		"URL": "https://doi.org/10.1007/s10665-026-10524-4",
+		"volume": "158",
+		"author": [
+			{
+				"family": "Metherall",
+				"given": "Brady"
+			},
+			{
+				"family": "Luckins",
+				"given": "Ellen K."
+			},
+			{
+				"family": "Neff",
+				"given": "Alannah"
+			},
+			{
+				"family": "Brosa Planella",
+				"given": "Ferran"
+			},
+			{
+				"family": "Please",
+				"given": "Colin P."
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2026",
+					5,
+					13
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2026",
+					5,
+					13
+				]
+			]
+		}
+	}
+]

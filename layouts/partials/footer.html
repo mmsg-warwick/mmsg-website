@@ -1,0 +1,96 @@
+
+<style>
+  .footer-extended {
+    border-top: 1px solid rgba(128,128,128,0.15);
+    padding: 2rem 1rem 1rem 1rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .footer-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .footer-logos img {
+    height: 40px;
+    width: auto;
+  }
+  .footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.8rem;
+    opacity: 0.45;
+    text-align: center;
+  }
+  .footer-bottom a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+  }
+  .footer-bottom a:hover {
+    opacity: 1;
+    text-decoration: underline;
+  }
+  .footer-divider {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: currentColor;
+    opacity: 0.4;
+    display: inline-block;
+  }
+
+  /* Light/dark logo switching */
+  .logo-light { display: block; }
+  .logo-dark  { display: none; }
+
+  :root.dark .logo-light { display: none; }
+  :root.dark .logo-dark  { display: block; }
+</style>
+
+<div class="footer-extended">
+
+  <div class="footer-logos">
+
+    <!-- University of Warwick logo -->
+    <!-- Light: download coloured logo from https://warwick.ac.uk/brand → static/img/logos/warwick-light.png -->
+    <!-- Dark: download white logo from https://warwick.ac.uk/brand → static/img/logos/warwick-dark.svg -->
+    <a href="https://warwick.ac.uk" target="_blank" rel="noopener">
+      <img src="/img/logos/warwick-light.svg" alt="University of Warwick" class="logo-light">
+      <img src="/img/logos/warwick-dark.svg"  alt="University of Warwick" class="logo-dark">
+    </a>
+
+    <!-- Funder 1 (e.g. Faraday) -->
+    <!-- Download from https://faraday.org/about/logos/ -->
+    <!-- Place at static/img/logos/faraday-light.svg and static/img/logos/faraday-dark.svg -->
+    <a href="https://faraday.org" target="_blank" rel="noopener">
+      <img src="/img/logos/faraday-light.svg" alt="The Faraday Institution" class="logo-light">
+      <img src="/img/logos/faraday-dark.svg"  alt="The Faraday Institution" class="logo-dark">
+    </a>
+
+  </div>
+
+  <div class="footer-bottom">
+
+    <span>&copy; {{ now.Format "2006" }} Mathematical Modelling for Sustainability Group</span>
+
+    <span class="footer-divider"></span>
+
+    <span>Powered by <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a> &amp; <a href="https://blowfish.page" target="_blank" rel="noopener">Blowfish</a></span>
+
+    <span class="footer-divider"></span>
+
+    <!-- Replace with your actual source repo URL -->
+    <a href="https://github.com/your-org/your-website-repo" target="_blank" rel="noopener">Source</a>
+
+  </div>
+
+</div>

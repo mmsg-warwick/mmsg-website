@@ -1,0 +1,50 @@
+{{ define "main" }}
+
+<div class="px-4">
+
+  <h1 class="text-4xl font-bold" style="margin-bottom: 1.5rem;">
+    {{ .Title }}
+  </h1>
+
+  <div class="mb-8">
+    {{ .Content }}
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 2rem;">
+
+    {{ range .Pages.ByWeight }}
+
+      {{ $theme := . }}
+
+      <a href="{{ $theme.RelPermalink }}" style="display: block; text-decoration: none; border-radius: 1rem; overflow: hidden; border: 1px solid rgba(128,128,128,0.2); box-shadow: 0 1px 3px rgba(0,0,0,0.08); transition: box-shadow 0.2s ease;"
+        onmouseover="this.style.boxShadow='0 4px 16px rgba(0,0,0,0.15)'"
+        onmouseout="this.style.boxShadow='0 1px 3px rgba(0,0,0,0.08)'">
+
+        {{ with $theme.Resources.GetMatch $theme.Params.photo }}
+          <img src="{{ .RelPermalink }}" alt="{{ $theme.Title }}" class="nozoom"
+            style="width: 100%; height: 200px; object-fit: cover; display: block;">
+        {{ end }}
+
+        <div style="padding: 1.25rem;">
+
+          <h2 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem;">
+            {{ $theme.Title }}
+          </h2>
+
+          {{ with $theme.Summary }}
+            <p style="font-size: 0.9rem; opacity: 0.7; line-height: 1.5;">
+              {{ . }}
+            </p>
+          {{ end }}
+
+        </div>
+
+      </a>
+
+    {{ end }}
+
+  </div>
+
+</div>
+
+{{ end }}
