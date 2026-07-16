@@ -4,14 +4,14 @@
 
 1. Home
 2. Research
-3. People
+3. Team
 4. Publications
 5. Software
 6. News
 7. Opportunities
 8. Contact
 
-## People categories
+## Team categories
 
 1. Lead
 2. Researchers

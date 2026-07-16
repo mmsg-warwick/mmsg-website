@@ -1,5 +1,5 @@
 ---
-title: "People"
+title: "Team"
 
 cascade:
   showDate: false
