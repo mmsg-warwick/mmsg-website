@@ -23,8 +23,8 @@ pageRef = "/research"
 weight = 10
 
 [[menus.main]]
-name = "People"
-pageRef = "/people"
+name = "Team"
+pageRef = "/team"
 weight = 20
 
 [[menus.main]]
