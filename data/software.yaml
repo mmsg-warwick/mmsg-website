@@ -1,0 +1,44 @@
+# Software shown on the Software page, in the order listed here.
+#
+# Fields:
+#   name        (required) Name of the tool.
+#   tagline     (required) One line saying what the tool is.
+#   description (required) Two or three sentences on what it does and how the
+#               group is involved. Markdown is allowed.
+#   logo        (optional) Path to a square logo under static/, e.g.
+#               "img/software/pybamm.png". Without one, a code icon is shown.
+#   logo_dark   (optional) Version of the logo for dark mode, if different.
+#   links       (optional) Any of: website, github, docs, paper (full URLs).
+#   themes      (optional) Research themes the tool is listed under, as the
+#               folder names in content/research/ (e.g. thermal-energy-storage).
+
+- name: "PyBaMM"
+  themes: ["electrochemical-energy-storage"]
+  tagline: "Fast and flexible physics-based battery models in Python"
+  description: "PyBaMM (Python Battery Mathematical Modelling) is an open-source library for simulating batteries with physics-based models, from the Doyle–Fuller–Newman model to fast reduced-order models such as the single particle model, together with thermal and degradation effects, parameter sets and solvers. It is used widely across academia and industry. Members of the group are among PyBaMM's core developers, contributing new models and numerical methods and helping to maintain the package."
+  logo: "img/software/pybamm.png"
+  links:
+    website: "https://pybamm.org"
+    github: "https://github.com/pybamm-team/PyBaMM"
+    docs: "https://docs.pybamm.org"
+    paper: "https://doi.org/10.5334/jors.309"
+
+- name: "PyTES"
+  themes: ["thermal-energy-storage"]
+  tagline: "Models and tools for thermal energy storage"
+  description: "PyTES (Python Thermal Energy Storage) is a library of models for thermal energy storage systems, also known as heat batteries, built on PyBaMM. It brings validated models, such as finned-tube and packed-bed stores with phase-change materials, together under one interface so that different designs can be compared like for like. The group leads the development of PyTES, which is currently in early (alpha) release."
+  logo: "img/software/pytes-icon-light.svg"
+  logo_dark: "img/software/pytes-icon-dark.svg"
+  links:
+    github: "https://github.com/mmsg-warwick/PyTES"
+    docs: "https://pytes.readthedocs.io"
+
+- name: "PyBOP"
+  themes: ["electrochemical-energy-storage"]
+  tagline: "Parameterisation and optimisation of battery models"
+  description: "PyBOP (Python Battery Optimisation and Parameterisation) builds on PyBaMM to fit battery models to experimental data and to optimise cell designs. It provides a common interface to a range of optimisation and Bayesian inference methods, making it easier to identify parameters and quantify their uncertainty. Members of the group contribute to its development and use it in our parameterisation work."
+  logo: "img/software/pybop.svg"
+  links:
+    github: "https://github.com/pybop-team/PyBOP"
+    docs: "https://pybop-docs.readthedocs.io"
+    paper: "https://doi.org/10.21105/joss.07874"
