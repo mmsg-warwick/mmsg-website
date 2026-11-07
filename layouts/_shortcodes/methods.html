@@ -1,0 +1,56 @@
+{{/* Grid of non-clickable method cards. Wrap one or more {{< method >}} shortcodes:
+     {{< methods >}}
+     {{< method title="..." icon="modelling" >}}Text in Markdown.{{< /method >}}
+     {{< /methods >}} */}}
+
+<style>
+  .methods-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+    margin: 1.5rem 0 2.5rem 0;
+  }
+  .method-card {
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background: rgba(128,128,128,0.07);
+  }
+  .method-icon {
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    background: rgba(var(--color-primary-500), 0.15);
+    color: rgb(var(--color-primary-600));
+  }
+  .dark .method-icon {
+    color: rgb(var(--color-primary-400));
+  }
+  .method-icon svg {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+  .method-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  .method-text {
+    font-size: 0.95rem;
+    line-height: 1.65;
+    opacity: 0.85;
+  }
+  .method-text p {
+    margin: 0 0 0.6rem 0;
+  }
+  .method-text p:last-child {
+    margin-bottom: 0;
+  }
+</style>
+
+<div class="not-prose methods-grid">
+  {{ .Inner }}
+</div>

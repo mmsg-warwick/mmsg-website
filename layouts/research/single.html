@@ -1,27 +1,119 @@
 {{ define "main" }}
 
 <style>
-  .theme-hero {
-    display: flex;
-    flex-direction: row;
-    gap: 2.5rem;
-    align-items: center;
-    margin-bottom: 3rem;
-  }
-  .theme-hero-text {
-    flex: 1;
-    min-width: 0;
-  }
-  .theme-hero-image {
-    flex: 0 0 45%;
-    max-width: 45%;
-  }
-  .theme-hero-image img {
+  .theme-banner {
     width: 100%;
-    aspect-ratio: 16 / 9;
+    max-width: 860px;
+    height: 250px;
     object-fit: cover;
     border-radius: 0.75rem;
     display: block;
+    margin: 0 0 2rem 0;
+  }
+  .theme-header {
+    max-width: 860px;
+    margin-bottom: 2rem;
+  }
+  .theme-title {
+    font-size: 2.25rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin: 0 0 0.75rem 0;
+  }
+  .theme-summary {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    opacity: 0.75;
+    margin: 0;
+  }
+  .theme-section {
+    max-width: 860px;
+    margin-top: 3rem;
+  }
+  .theme-section-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem 0;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(128,128,128,0.2);
+  }
+  .theme-section-link {
+    display: inline-block;
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none !important;
+  }
+  .theme-section-link:hover {
+    text-decoration: underline !important;
+  }
+  .theme-pub {
+    display: flex;
+    gap: 1.25rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(128,128,128,0.12);
+  }
+  .theme-pub-year {
+    flex: 0 0 3rem;
+    font-weight: 700;
+    font-size: 0.95rem;
+  }
+  .theme-pub-title {
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 0.3rem;
+  }
+  .theme-pub-title a {
+    text-decoration: none !important;
+  }
+  .theme-pub-title a:hover {
+    text-decoration: underline !important;
+  }
+  .theme-pub-meta {
+    font-size: 0.875rem;
+    opacity: 0.65;
+    line-height: 1.5;
+  }
+  .theme-pub-note {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-top: 0.4rem;
+  }
+  .theme-tools {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1rem;
+    margin-top: 1.25rem;
+  }
+  .theme-tool {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    padding: 0.9rem 1rem;
+    border-radius: 0.75rem;
+    border: 1px solid rgba(128,128,128,0.2);
+    text-decoration: none !important;
+    transition: border-color 0.15s ease;
+  }
+  .theme-tool:hover {
+    border-color: rgb(var(--color-primary-500));
+  }
+  .theme-tool img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    flex-shrink: 0;
+    margin: 0;
+  }
+  .theme-tool-name {
+    display: block;
+    font-weight: 700;
+  }
+  .theme-tool-tagline {
+    display: block;
+    font-size: 0.85rem;
+    opacity: 0.7;
+    line-height: 1.4;
   }
   @media (max-width: 768px) {
     .theme-hero {
@@ -37,32 +129,97 @@
 
 <div class="px-4">
 
-  <!-- Hero: title + summary on left, image on right -->
-  <div class="theme-hero">
+  <!-- Banner: a wide crop of the theme image, resized at build time -->
+  {{ with .Resources.GetMatch .Params.photo }}
+    {{ $large := .Fill "1800x500 webp q80 Center" }}
+    {{ $small := .Fill "900x400 webp q80 Center" }}
+    <picture>
+      <source media="(max-width: 768px)" srcset="{{ $small.RelPermalink }}">
+      <img src="{{ $large.RelPermalink }}" alt="" class="theme-banner nozoom"
+        width="{{ $large.Width }}" height="{{ $large.Height }}">
+    </picture>
+  {{ end }}
 
-    <div class="theme-hero-text">
-      <h1 style="font-size: 2rem; font-weight: 700; margin-bottom: 1rem; line-height: 1.2;">
-        {{ .Title }}
-      </h1>
-      {{ with .Summary }}
-        <p style="font-size: 1.05rem; opacity: 0.7; line-height: 1.7;">
-          {{ . }}
-        </p>
-      {{ end }}
-    </div>
-
-    {{ with .Resources.GetMatch .Params.photo }}
-      <div class="theme-hero-image">
-        <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" class="nozoom">
-      </div>
+  <!-- Title and summary -->
+  <header class="theme-header">
+    <h1 class="theme-title">{{ .Title }}</h1>
+    {{ with .Summary }}
+      <p class="theme-summary">{{ . }}</p>
     {{ end }}
-
-  </div>
+  </header>
 
   <!-- Main content -->
-  <div class="prose dark:prose-invert max-w-none">
+  <div class="prose dark:prose-invert max-w-none" style="max-width: 860px;">
     {{ .Content }}
   </div>
+
+  <!-- Selected papers (DOIs listed in the page's front matter) -->
+  {{ with .Params.highlights }}
+    <section class="theme-section">
+      <h2 class="theme-section-title">Selected papers</h2>
+      <div>
+        {{ range . }}
+          {{ $doi := lower .doi }}
+          {{ $note := .note }}
+          {{ range where hugo.Data.publications "DOI" "!=" nil }}
+            {{ if eq (lower .DOI) $doi }}
+              {{ $pub := . }}
+              {{ $year := "" }}
+              {{ with .issued }}{{ with index . "date-parts" }}{{ with index . 0 }}{{ $year = index . 0 }}{{ end }}{{ end }}{{ end }}
+              <div class="theme-pub">
+                <div class="theme-pub-year text-primary-600 dark:text-primary-400">{{ $year }}</div>
+                <div>
+                  <div class="theme-pub-title">
+                    <a href="https://doi.org/{{ $pub.DOI }}" target="_blank" rel="noopener">{{ $pub.title }}</a>
+                  </div>
+                  <div class="theme-pub-meta">
+                    {{ with $pub.author }}
+                      {{ $n := len . }}
+                      {{ range $i, $author := first 4 . -}}
+                        {{- if $i }}, {{ end -}}
+                        {{- with $author.literal }}{{ . }}{{ else }}{{ $author.given }} {{ $author.family }}{{ end -}}
+                      {{- end -}}
+                      {{- if gt $n 4 }} et al.{{ end }}
+                    {{ end }}
+                    {{ with index $pub "container-title" }}&middot; <em>{{ . }}</em>{{ end }}
+                  </div>
+                  {{ with $note }}
+                    <div class="theme-pub-note">{{ . | markdownify }}</div>
+                  {{ end }}
+                </div>
+              </div>
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      </div>
+      <a href="{{ "publications/" | relURL }}" class="theme-section-link text-primary-600 dark:text-primary-400">All publications &rarr;</a>
+    </section>
+  {{ end }}
+
+  <!-- Related software (entries in data/software.yaml tagged with this theme) -->
+  {{ $theme := .File.ContentBaseName }}
+  {{ $tools := slice }}
+  {{ range hugo.Data.software }}
+    {{ if in .themes $theme }}{{ $tools = $tools | append . }}{{ end }}
+  {{ end }}
+  {{ with $tools }}
+    <section class="theme-section">
+      <h2 class="theme-section-title">Software</h2>
+      <div class="theme-tools">
+        {{ range . }}
+          <a href="{{ "software/" | relURL }}#{{ anchorize .name }}" class="theme-tool">
+            {{ with .logo }}
+              <img src="{{ . | relURL }}" alt="" class="nozoom">
+            {{ end }}
+            <span>
+              <span class="theme-tool-name">{{ .name }}</span>
+              <span class="theme-tool-tagline">{{ .tagline }}</span>
+            </span>
+          </a>
+        {{ end }}
+      </div>
+    </section>
+  {{ end }}
 
 </div>
 

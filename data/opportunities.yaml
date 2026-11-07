@@ -1,0 +1,21 @@
+# Open positions shown on the Opportunities page.
+#
+# Each entry is listed under its category's section. Entries whose deadline
+# has passed are hidden automatically the next time the site is built.
+#
+# Fields:
+#   title       (required) Name of the position.
+#   category    (required) One of: undergraduate, phd, postdoc.
+#   url         (required) Link to the full advert (usually hosted elsewhere).
+#   deadline    (optional) Closing date as YYYY-MM-DD.
+#   description (optional) One or two sentences summarising the position.
+#
+# Example:
+#
+# - title: "Funded PhD studentship in battery modelling"
+#   category: phd
+#   url: "https://warwick.ac.uk/..."
+#   deadline: "2027-01-15"
+#   description: "Fully funded 3.5-year studentship developing reduced-order models for lithium-ion batteries."
+
+[]

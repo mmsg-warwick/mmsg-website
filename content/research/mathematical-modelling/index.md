@@ -1,6 +1,11 @@
 ---
+# Hidden while methods are described under "How we work" on the Research page.
+build:
+  list: never
+  render: never
+  publishResources: false
 title: "Mathematical Modelling"
-summary: "Develop mathematical models and computational tools."
+summary: "Asymptotic, homogenisation and numerical methods to derive, simplify and analyse models of heat and mass transfer."
 photo: "modelling.png"
 weight: 30
 ---

@@ -11,11 +11,8 @@ photo: "user.png" # your photo file name (place it in the same folder as this in
 
 bio: "Short bio"  # actually not needed
 
-research_interests:
-  - Electrochemical Energy Storage
-  - Thermal Energy Storage
-
-# Add relevant links (only the specific usernames are needed, the URL will be generated automatically). Leave empty (i.e. "") if not applicable.
+# Add relevant links (only the specific usernames are needed, the URL will be generated automatically; for email, use the full address). Leave empty (i.e. "") if not applicable.
+email: ""
 github: "example-student"
 orcid: ""
 scholar: ""

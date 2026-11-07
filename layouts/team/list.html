@@ -83,6 +83,12 @@
                 <!-- Social icons -->
                 <div style="display: flex; gap: 0.75rem; margin-top: 0.75rem; flex-wrap: wrap;">
 
+                  {{ with $person.Params.email }}
+                    <a href="mailto:{{ . }}" title="Email" style="opacity: 0.6;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.6'">
+                      {{ partial "icon.html" "envelope" }}
+                    </a>
+                  {{ end }}
+
                   {{ with $person.Params.github }}
                     <a href="https://github.com/{{ . }}" target="_blank" rel="noopener" title="GitHub" style="opacity: 0.6;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.6'">
                       {{ partial "icon.html" "github" }}
