@@ -1,0 +1,40 @@
+{{/* Lists open positions from data/opportunities.yaml for one category.
+     Usage: {{< opportunities category="phd" >}}
+     Positions whose deadline has passed are hidden. */}}
+
+{{ $category := .Get "category" }}
+{{ $today := now.Format "2006-01-02" }}
+
+{{ $open := slice }}
+{{ range hugo.Data.opportunities }}
+  {{ if eq .category $category }}
+    {{ if or (not .deadline) (ge (string .deadline) $today) }}
+      {{ $open = $open | append . }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+<div class="not-prose" style="margin: 1.25rem 0 1.75rem 0;">
+  {{ with $open }}
+    <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+      {{ range sort . "deadline" }}
+        <a href="{{ .url }}" target="_blank" rel="noopener"
+          style="display: block; padding: 0.9rem 1.1rem; border-radius: 0.5rem; border: 1px solid rgba(128,128,128,0.2); border-left: 3px solid rgb(var(--color-primary-500)); text-decoration: none;">
+          <div style="font-weight: 600; line-height: 1.4;">{{ .title }} &nearr;</div>
+          {{ with .description }}
+            <div style="font-size: 0.9rem; opacity: 0.75; margin-top: 0.25rem; line-height: 1.5;">{{ . }}</div>
+          {{ end }}
+          {{ with .deadline }}
+            <div style="font-size: 0.85rem; font-weight: 600; margin-top: 0.4rem;" class="text-primary-600 dark:text-primary-400">
+              Deadline: {{ (time.AsTime .).Format "2 January 2006" }}
+            </div>
+          {{ end }}
+        </a>
+      {{ end }}
+    </div>
+  {{ else }}
+    <p style="font-size: 0.95rem; opacity: 0.65; font-style: italic; margin: 0;">
+      There are no open positions at the moment, but we are always happy to hear from people whose interests match our research.
+    </p>
+  {{ end }}
+</div>
