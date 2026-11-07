@@ -1,6 +1,11 @@
 ---
+# Hidden while methods are described under "How we work" on the Research page.
+build:
+  list: never
+  render: never
+  publishResources: false
 title: "Scientific Software"
-summary: "Develop scientific software tools to support open and reproducible research."
+summary: "Open-source tools that make our work reproducible and usable by other researchers and engineers."
 photo: "software.png"
 weight: 40
 ---

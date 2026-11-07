@@ -1,0 +1,39 @@
+{{/* Cards for the research themes (the pages in content/research/), ordered by weight.
+     Usage, in content/research/_index.md: {{< research-themes >}} */}}
+
+<div class="not-prose" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 2rem; margin: 1.5rem 0 2.5rem 0;">
+
+  {{ range .Page.Pages.ByWeight }}
+
+    {{ $theme := . }}
+
+    <a href="{{ $theme.RelPermalink }}" style="display: block; text-decoration: none; border-radius: 1rem; overflow: hidden; border: 1px solid rgba(128,128,128,0.2); box-shadow: 0 1px 3px rgba(0,0,0,0.08); transition: box-shadow 0.2s ease;"
+      onmouseover="this.style.boxShadow='0 4px 16px rgba(0,0,0,0.15)'"
+      onmouseout="this.style.boxShadow='0 1px 3px rgba(0,0,0,0.08)'">
+
+      {{ with $theme.Resources.GetMatch $theme.Params.photo }}
+        {{ $card := .Fill "800x400 webp q80 Center" }}
+        <img src="{{ $card.RelPermalink }}" alt="" class="nozoom" loading="lazy"
+          width="{{ $card.Width }}" height="{{ $card.Height }}"
+          style="width: 100%; height: 200px; object-fit: cover; display: block;">
+      {{ end }}
+
+      <div style="padding: 1.25rem;">
+
+        <h3 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem;">
+          {{ $theme.Title }}
+        </h3>
+
+        {{ with $theme.Summary }}
+          <p style="font-size: 0.9rem; opacity: 0.7; line-height: 1.5;">
+            {{ . }}
+          </p>
+        {{ end }}
+
+      </div>
+
+    </a>
+
+  {{ end }}
+
+</div>

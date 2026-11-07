@@ -1,0 +1,17 @@
+{{/* One non-clickable method card; use inside {{< methods >}}.
+     Parameters: title, icon ("modelling" or "software"). */}}
+
+{{ $icons := dict
+  "modelling" `<path stroke-linecap="round" stroke-linejoin="round" d="M4.745 3A23.933 23.933 0 0 0 3 12c0 3.183.62 6.22 1.745 9M19.255 3A23.933 23.933 0 0 1 21 12c0 3.183-.62 6.22-1.745 9M8.25 8.885l1.444-.89a.75.75 0 0 1 1.105.402l2.402 7.206a.75.75 0 0 0 1.104.401l1.445-.889m-8.25.75.213.09a1.687 1.687 0 0 0 2.062-.617l4.45-6.676a1.688 1.688 0 0 1 2.062-.618l.213.09" />`
+  "software" `<path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />`
+}}
+
+<div class="method-card">
+  {{ with index $icons (.Get "icon") }}
+    <div class="method-icon" aria-hidden="true">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">{{ . | safeHTML }}</svg>
+    </div>
+  {{ end }}
+  <h3 class="method-title">{{ .Get "title" }}</h3>
+  <div class="method-text">{{ .InnerDeindent | markdownify }}</div>
+</div>
