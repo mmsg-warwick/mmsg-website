@@ -13,12 +13,7 @@ photo: "photo.jpg"
 
 bio: "Short bio"
 
-research_interests:
-  - Electrochemical Energy Storage
-  - Thermal Energy Storage
-  - Mathematical Modelling
-  - Scientific Software
-
+email: "Ferran.Brosa-Planella@warwick.ac.uk"
 github: "brosaplanella"
 orcid: "0000-0001-6363-2812"
 scholar: "vqYOuDcAAAAJ"

@@ -56,6 +56,13 @@
       <!-- Social icons -->
       <div style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap;">
 
+        {{ with .Params.email }}
+          <a href="mailto:{{ . }}" title="Email"
+            style="opacity: 0.6;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.6'">
+            {{ partial "icon.html" "envelope" }}
+          </a>
+        {{ end }}
+
         {{ with .Params.github }}
           <a href="https://github.com/{{ . }}" target="_blank" rel="noopener" title="GitHub"
             style="opacity: 0.6;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.6'">
@@ -89,7 +96,7 @@
     </div>
 
     <!-- Main content -->
-    <div class="person-main prose dark:prose-invert max-w-none">
+    <div class="person-main prose dark:prose-invert max-w-none" style="max-width: none;">
       {{ .Content }}
     </div>
 
