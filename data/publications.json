@@ -7,6 +7,7 @@
 		"DOI": "10.1016/j.electacta.2026.149257",
 		"ISSN": "0013-4686",
 		"journalAbbreviation": "Electrochimica Acta",
+		"note": "PDF: https://wrap.warwick.ac.uk/id/eprint/202035/2/WRAP-model-SEI-growth-based-non-equilibrium-thermodynamics-2026.pdf\nSoftware: https://zenodo.org/records/17952331",
 		"page": "149257",
 		"source": "ScienceDirect",
 		"title": "A model for SEI growth based on non-equilibrium thermodynamics",
@@ -57,6 +58,7 @@
 		"DOI": "10.1039/d6eb00182c",
 		"ISSN": "3033-4071",
 		"journalAbbreviation": "EES Batteries",
+		"note": "PDF: https://rscj.silverchair-cdn.com/rscj/content_public/journal/eb/pap/10.1039_d6eb00182c/1/d6eb00182c.pdf?Expires=1797087440&Signature=OtWT5KNyGYep-X1Rv4NKS0F4SaD0Aq4GUaLs2Oxw1XPNqv7k44KMtjDUu-Et-tssol4Hal6mi0v3wWvKIQ2MKpueSlHruZFsTfHzD-P8AG5GiygCdxe5T~vFyBuoBvSVsgMXoPBYiTIB0wqS5cSnwRfEv5o9OAcdyONcH7bsErjLmfpiNF4IqpbLTCUjqnQJ-idqqlzgEGIlXgfIjJuYmMMt2S16pdUTFGhOyR0w9BuZdn8FgrUq~xs5fgrZew2cZJH16OlDmJxSnWlqfxRm~4fJGAHGaw0JB7NG8rGQ8k4l2fo0W6RN8Fbu3Ire7PH35RKlmlwv5xJ5DjbD5eedow__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA\nSoftware: https://github.com/mmsg-warwick/ragone/tree/published",
 		"shortTitle": "There is no knee in Ragone",
 		"source": "Silverchair",
 		"title": "There is no knee in Ragone: clarifying battery energy and power fade using Ragone plots",
@@ -144,6 +146,59 @@
 					2026,
 					5,
 					13
+				]
+			]
+		}
+	},
+	{
+		"id": "24620626/JNPPT3V5",
+		"type": "article-journal",
+		"abstract": "Scientific optimization problems are often characterized by slow, expensive, and non-differentiable evaluations, which severely limit efficient exploration of rich design spaces. In these settings, performance depends not only on the optimizer itself, but also on whether the chosen search space can represent good solutions and whether important design requirements are effectively incorporated into the search. Here, we introduce a gradient-free optimization framework based on large language models (LLMs) that enables the generation and refinement of executable control policies directly from natural language. We propose two complementary paradigms: Prompt-to-Optimizer (P2O), which combines LLM-based structural generation with gradient-free parameter optimization, and Prompt-to-Protocol (P2P), which directly synthesizes fully specified control policies. We apply this framework to battery fast-charging protocol design, a representative slow-feedback optimization problem. Across multiple case studies, our methods outperform conventional approaches restricted to predefined functional forms. In a realistic fast-charging scenario, both approaches improve battery state of health by approximately 4.2% over a representative baseline, with P2P achieving this under matched evaluation budgets. More broadly, our results suggest that LLMs can serve as representation generators that expand the hypothesis space of scientific optimization, enabling efficient search in domains where evaluations are costly, and gradients are unavailable.",
+		"container-title": "Advanced Science",
+		"DOI": "10.1002/advs.78012",
+		"ISSN": "2198-3844",
+		"issue": "n/a",
+		"language": "en",
+		"license": "© 2026 The Author(s). Advanced Science published by Wiley-VCH GmbH",
+		"note": "PDF: https://advanced.onlinelibrary.wiley.com/doi/epdf/10.1002/advs.78012\nSoftware: https://github.com/tldr-group/prompt-to-protocol",
+		"page": "e78012",
+		"shortTitle": "LLMs as Representation Generators for Gradient-Free Scientific Optimization",
+		"source": "Wiley Online Library",
+		"title": "LLMs as Representation Generators for Gradient-Free Scientific Optimization: A Case Study in Battery Fast Charging",
+		"title-short": "LLMs as Representation Generators for Gradient-Free Scientific Optimization",
+		"URL": "https://onlinelibrary.wiley.com/doi/abs/10.1002/advs.78012",
+		"volume": "n/a",
+		"author": [
+			{
+				"family": "Lei",
+				"given": "Ge"
+			},
+			{
+				"family": "Brosa Planella",
+				"given": "Ferran"
+			},
+			{
+				"family": "Baird",
+				"given": "Sterling G."
+			},
+			{
+				"family": "Cooper",
+				"given": "Samuel J."
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					2026,
+					10,
+					28
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					2026
 				]
 			]
 		}
@@ -1492,51 +1547,6 @@
 			"date-parts": [
 				[
 					2018
-				]
-			]
-		}
-	},
-	{
-		"id": "24620626/JNPPT3V5",
-		"type": "article-journal",
-		"abstract": "Scientific optimization problems are often characterized by slow, expensive, and non-differentiable evaluations, which severely limit efficient exploration of rich design spaces. In these settings, performance depends not only on the optimizer itself, but also on whether the chosen search space can represent good solutions and whether important design requirements are effectively incorporated into the search. Here, we introduce a gradient-free optimization framework based on large language models (LLMs) that enables the generation and refinement of executable control policies directly from natural language. We propose two complementary paradigms: Prompt-to-Optimizer (P2O), which combines LLM-based structural generation with gradient-free parameter optimization, and Prompt-to-Protocol (P2P), which directly synthesizes fully specified control policies. We apply this framework to battery fast-charging protocol design, a representative slow-feedback optimization problem. Across multiple case studies, our methods outperform conventional approaches restricted to predefined functional forms. In a realistic fast-charging scenario, both approaches improve battery state of health by approximately 4.2% over a representative baseline, with P2P achieving this under matched evaluation budgets. More broadly, our results suggest that LLMs can serve as representation generators that expand the hypothesis space of scientific optimization, enabling efficient search in domains where evaluations are costly, and gradients are unavailable.",
-		"container-title": "Advanced Science",
-		"DOI": "10.1002/advs.78012",
-		"ISSN": "2198-3844",
-		"issue": "n/a",
-		"language": "en",
-		"license": "© 2026 The Author(s). Advanced Science published by Wiley-VCH GmbH",
-		"page": "e78012",
-		"shortTitle": "LLMs as Representation Generators for Gradient-Free Scientific Optimization",
-		"source": "Wiley Online Library",
-		"title": "LLMs as Representation Generators for Gradient-Free Scientific Optimization: A Case Study in Battery Fast Charging",
-		"title-short": "LLMs as Representation Generators for Gradient-Free Scientific Optimization",
-		"URL": "https://onlinelibrary.wiley.com/doi/abs/10.1002/advs.78012",
-		"volume": "n/a",
-		"author": [
-			{
-				"family": "Lei",
-				"given": "Ge"
-			},
-			{
-				"family": "Brosa Planella",
-				"given": "Ferran"
-			},
-			{
-				"family": "Baird",
-				"given": "Sterling G."
-			},
-			{
-				"family": "Cooper",
-				"given": "Samuel J."
-			}
-		],
-		"accessed": {
-			"date-parts": [
-				[
-					2026,
-					10,
-					28
 				]
 			]
 		}
