@@ -72,8 +72,19 @@ netlify.toml    Netlify build settings, including the Hugo version
 | --------------------------------------------------------------------------- | --------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Update Publications](.github/workflows/update_publications.yaml)           | Mondays 07:00 UTC, or by hand           | Downloads the publications from Zotero and opens a pull request if anything changed. See [docs/adding-publications.md](docs/adding-publications.md).                 |
 | [Check Links](.github/workflows/check_links.yaml)                           | Pushes and PRs to `main`, Mondays 08:00 | Builds the site and checks every link with [lychee](https://lychee.cli.rs/). A failure usually means an external link has moved; fix or remove it.                   |
+| [Scheduled Rebuild](.github/workflows/scheduled_rebuild.yaml)              | Daily 05:00 UTC, or by hand             | Rebuilds the live site through a Netlify build hook, so that date-dependent content (expired opportunities) updates without a merge. Needs the `NETLIFY_BUILD_HOOK` secret (below). |
 | Netlify                                                                     | Every PR and every push to `main`       | Builds a deploy preview for each PR (linked in the PR checks) and publishes `main` to the live site.                                                                 |
 | [Dependabot](.github/dependabot.yaml) and pre-commit.ci                     | Periodically                            | Open PRs to update GitHub Actions and pre-commit hooks. Merge them once the checks pass.                                                                              |
+
+### Setting up the daily rebuild
+
+The Scheduled Rebuild workflow needs a Netlify build hook URL, stored as a repository secret:
+
+1. In Netlify: **Site configuration → Build & deploy → Continuous deployment → Build hooks → Add build hook**, for branch `main`. Copy the URL.
+2. In GitHub: **Settings → Secrets and variables → Actions → New repository secret**, named `NETLIFY_BUILD_HOOK`, with the URL as its value.
+3. Test it from the **Actions** tab: **Scheduled Rebuild → Run workflow**.
+
+GitHub pauses scheduled workflows in repositories with no activity for 60 days; re-enable it from the Actions tab if that happens.
 
 ### Updating Hugo or the theme
 

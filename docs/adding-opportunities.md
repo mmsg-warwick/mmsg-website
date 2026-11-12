@@ -26,6 +26,6 @@ Preview with `hugo server` and open a pull request (see [CONTRIBUTING.md](../CON
 
 ## Closing a position
 
-A position whose deadline has passed is hidden automatically, but only when the site is next built, which happens whenever anything is merged into `main`. If nothing is merged after the deadline, the position stays visible. To be sure, delete the entry once the position closes (and put back `[]` if it was the last one).
+A position whose deadline has passed is hidden automatically when the site is rebuilt, which happens every day (see the Scheduled Rebuild workflow in the [README](../README.md#automation)) and whenever anything is merged into `main`. It is still good practice to delete the entry once the position is filled (and put back `[]` if it was the last one).
 
 Positions without a deadline are never hidden automatically: delete them when filled.
