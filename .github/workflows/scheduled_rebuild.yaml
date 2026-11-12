@@ -1,0 +1,28 @@
+name: Scheduled Rebuild
+
+# Rebuilds the live site every day, so that content that depends on the date
+# (e.g. opportunities whose deadline has passed) is updated even when nothing
+# has been merged. Triggers a Netlify build hook stored as a repository secret.
+
+on:
+  schedule:
+    - cron: "0 5 * * *"  # every day at 5am UTC
+  workflow_dispatch:  # allow running it by hand from the Actions tab
+
+permissions: {}
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Trigger Netlify build
+        env:
+          NETLIFY_BUILD_HOOK: ${{ secrets.NETLIFY_BUILD_HOOK }}
+        run: |
+          if [ -z "$NETLIFY_BUILD_HOOK" ]; then
+            echo "::error::Set the NETLIFY_BUILD_HOOK repository secret (see README)."
+            exit 1
+          fi
+          curl --fail --silent --show-error -X POST -d '{}' "$NETLIFY_BUILD_HOOK"

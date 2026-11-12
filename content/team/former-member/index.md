@@ -1,6 +1,8 @@
 ---
 title: "Former member"
 
+draft: true # placeholder: delete this line only once real former members are added
+
 name: "Jane"
 
 surname: "Doe"
